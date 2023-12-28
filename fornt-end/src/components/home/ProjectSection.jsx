@@ -1,0 +1,20 @@
+import { Box, VStack } from '@chakra-ui/react'
+import React from 'react'
+import { projectData } from '../../utils/Data'
+import ProjectContainer from './ProjectContainer'
+
+const ProjectSection = () => {
+    
+
+  return (
+    <VStack px={20} py={10} gap={'30px'} >
+
+        {
+            projectData.map((el,index)=><ProjectContainer key={index} data={el} index={index} />)
+        }
+
+    </VStack>
+  )
+}
+
+export default ProjectSection
