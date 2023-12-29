@@ -7,7 +7,7 @@ const ProjectSection = () => {
     
 
   return (
-    <VStack px={20} py={10} gap={'30px'} >
+    <VStack  gap={'30px'} >
 
         {
             projectData.map((el,index)=><ProjectContainer key={index} data={el} index={index} />)

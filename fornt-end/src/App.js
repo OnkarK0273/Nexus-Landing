@@ -13,6 +13,7 @@ function App() {
       <Navbar2/>
       <MainRoutes/>
       <Footer/>
+      
     </Box  >
   );
 }

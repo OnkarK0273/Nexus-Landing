@@ -1,8 +1,12 @@
 import React from 'react'
+import FrontSection from '../components/projects/FrontSection'
+import { Box } from '@chakra-ui/react'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <Box>
+      <FrontSection/>
+    </Box>
   )
 }
 

@@ -41,7 +41,7 @@ import {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [flag,setFlag] = useState(false)
     const navigate = useNavigate()
-        const btnRef = React.useRef()
+    const btnRef = React.useRef()
       
     // handleside
     const handleSide = (val)=>{
@@ -53,7 +53,7 @@ import {
   
     return (
       <>
-        <Box px={{base:5 ,md:28}} position='sticky' bg={'black'} top={'0'} zIndex='2' py={4}>
+        <Box px={{base:5 ,md:28}} position='sticky' bg={"rgba(0, 0, 0, 0.8)"} top={'0'} zIndex='2' py={4}  >
           <Flex  alignItems={'center'} justifyContent={'space-between'} >
             <IconButton
               size={'md'}
