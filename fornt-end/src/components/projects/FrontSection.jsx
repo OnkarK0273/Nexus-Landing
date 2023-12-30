@@ -1,6 +1,10 @@
 import { Box, Grid, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 
+import Carousel from './Slick'
+
+
+
 const FrontSection = () => {
 const [data,setData] = useState({})
 const [data2,setData2] = useState([])
@@ -17,23 +21,25 @@ useEffect(()=>{
 
 console.log(data.details)
 
+    
+
 
   return (
     <Box>
         <Stack  >
 
-            <Box w={'100%'} >
-                <Image src={data.img2} alt={data.name} width={"100%"} height={'800px'} objectFit={'fill'} />
+            <Box w={'100%'} height={{base:"500px",sm:"600px",md:"600px",lg:"700px",xl:"750px","2xl":"1200px"}}  border={'0px'} borderColor={'white'} >
+                <Image src={data.img2} alt={data.name} width={"100%"} height={'100%'} objectFit={{base:"cover",xl:"fill"}} />
             </Box>
             <Stack p={10} w={'100%'} >
                 <Heading color={'#FDCB00'}  > {data.name} </Heading>
-                <Stack gap={10}   >
+                <Stack gap={5}   >
                     {
                         data2?.map((el,i)=>(<Text key={i} >{el}</Text>))
                     }
                 </Stack>
             </Stack>
-            <Grid templateColumns='repeat(3, 1fr)' gap={6} p={20} >
+            <Grid templateColumns={{base:'repeat(1, 1fr)',md:'repeat(2, 1fr)',lg:'repeat(3, 1fr)'}} gap={6} p={20}  display={{base:"none",md:"grid"}} >
 
                 {
                     images?.map((el,i)=>(
@@ -45,6 +51,11 @@ console.log(data.details)
                 }
 
             </Grid>
+            <Box display={{base:"block",md:"none"}} >
+                <Carousel images={images}/>
+            </Box>
+
+
         </Stack>
     </Box>
   )
