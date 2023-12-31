@@ -63,3 +63,5 @@ export const aboutDetails = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ullam, commodi, sapiente quo et officia maiores, eius quod in molestiae facere est! Ipsum voluptatum culpa sapiente debitis, blanditiis minima aperiam vitae illo temporibus suscipit voluptate, et reiciendis accusamus ut qui?",
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ullam, commodi, sapiente quo et officia maiores, eius quod in molestiae facere est! Ipsum voluptatum culpa sapiente debitis, blanditiis minima aperiam vitae illo temporibus suscipit voluptate, et reiciendis accusamus ut qui?"
 ]
+
+export const Links =[{name:'Projects',id:'projects'},{name:'Contact',id:'contact'}]
