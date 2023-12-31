@@ -208,13 +208,11 @@ export default function Navbar2() {
                     columnGap={"10px"}
                     _hover={{ color: "#FDCB00" }}
                     cursor={"pointer"}
-                    onClick={() => {
-                      handleSide("/");
-                    }}
+                  
                   >
                     <Icon as={IoGrid} boxSize={5} />
                     <ScrollNav name={"Projects"}>
-                      <Text fontWeight={"bold"}>Projects</Text>
+                      <Text onClick={()=>{Closesidebar()}} fontWeight={"bold"}>Projects</Text>
                     </ScrollNav>
                   </HStack>
                   <HStack
@@ -224,11 +222,11 @@ export default function Navbar2() {
                     columnGap={"10px"}
                     _hover={{ color: "#FDCB00" }}
                     cursor={"pointer"}
-                    onClick={()=>{Closesidebar()}}
+                    
                   >
                     <Icon as={MdPermContactCalendar} boxSize={5} />
-                    <ScrollNav name={"contact"}>
-                      <Text fontWeight={"bold"}>Contact US</Text>
+                    <ScrollNav name={"contact"}  >
+                      <Text onClick={()=>{Closesidebar()}}  fontWeight={"bold"}>Contact US</Text>
                     </ScrollNav>
                   </HStack>
                 </Stack>
