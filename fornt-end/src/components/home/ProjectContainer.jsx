@@ -16,16 +16,16 @@ const ProjectContainer = ({data,index}) => {
     const handleSession = (el)=>{
 
         sessionStorage.setItem("data",JSON.stringify(el))
-        navigate('/projects')
+        navigate('/projectsDetails')
 
     }
 
     
 
-  const truncateText = (text, maxWords) => {
-    const words = text.split(' ');
-    return words.slice(0, maxWords).join(' ') + (words.length > maxWords ? '...' : '');
-  };
+    const truncateText = (text, maxWords) => {
+        const words = text.split(' ');
+        return words.slice(0, maxWords).join(' ') + (words.length > maxWords ? '...' : '');
+    }
 
 
   return (

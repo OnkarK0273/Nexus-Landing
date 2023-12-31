@@ -2,7 +2,7 @@ import React from 'react'
 import FrontSection from '../components/projects/FrontSection'
 import { Box } from '@chakra-ui/react'
 
-const Projects = () => {
+const ProjectsDetails = () => {
   return (
     <Box>
       <FrontSection/>
@@ -10,4 +10,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default ProjectsDetails

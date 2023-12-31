@@ -3,7 +3,7 @@ import React from 'react'
 
 const Headier = ({text}) => {
   return (
-    <Heading textAlign={'center'} mb={10} >
+    <Heading textAlign={'center'} mb={10} fontSize={'4xl'} >
         {text}
     </Heading>
   )

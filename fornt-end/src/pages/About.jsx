@@ -1,8 +1,14 @@
+import { Box } from '@chakra-ui/react'
 import React from 'react'
+import FrontBanner from '../components/about/FrontBanner'
+import AboutDetails from '../components/about/AboutDetails'
 
 const About = () => {
   return (
-    <div>About</div>
+    <Box>
+      <FrontBanner/>
+      <AboutDetails/>
+    </Box>
   )
 }
 

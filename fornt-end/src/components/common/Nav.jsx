@@ -26,6 +26,7 @@ import {
     VStack,
     InputGroup,
     Heading,
+    Stack,
   
   } from '@chakra-ui/react';
   import { MdSell,MdOutlineMessage,MdHome } from 'react-icons/md'
@@ -33,7 +34,11 @@ import {
   import { HamburgerIcon, CloseIcon, ChevronDownIcon, Search2Icon } from '@chakra-ui/icons';
   import {Link as Navlink} from 'react-router-dom'
   import React, { useState,useEffect } from 'react';
-  
+  import { IoMdHome } from "react-icons/io";
+  import { MdPermContactCalendar } from "react-icons/md";
+  import { IoGrid } from "react-icons/io5";
+  import { FaExclamationCircle } from "react-icons/fa";
+
   
   
   
@@ -75,25 +80,25 @@ import {
             <Flex alignItems={'center'}>
             <HStack
                 as={'nav'}
-                spacing={4}
+                spacing={{base:5,lg:10}}
                 justifyContent='space-evenly'
                 pr='15px'
                 display={{ base: 'none', md: 'flex' }}>
-                  <Box flexDirection={'column'} size='lg' p='10px' cursor={'pointer'} _hover={{ color:'#FDCB00' }} onClick={()=>{navigate('/sell')}} >
+                  <Box flexDirection={'column'} fontSize={{base:"md",lg:"xl"}} p='10px' cursor={'pointer'} _hover={{ color:'#FDCB00' }} onClick={()=>{navigate('/')}} >
                       
-                       <Text  fontWeight={'bold'}>Home</Text>
+                       <Text  fontWeight={'light'}>Home</Text>
                   </Box>
-                  <Box flexDirection={'column'} size='lg' p='10px' cursor={'pointer'}  >
+                  <Box flexDirection={'column'} fontSize={{base:"md",lg:"xl"}} p='10px' cursor={'pointer'} onClick={()=>{handleSide('/about')}} >
                        
-                       <Text  fontWeight={'bold'} _hover={{ color:'#FDCB00' }} >About</Text>
+                       <Text  fontWeight={'light'} _hover={{ color:'#FDCB00' }} >About</Text>
                   </Box>
-                  <Box flexDirection={'column'} size='lg' p='10px' _hover={{ color:'#FDCB00' }}  cursor={'pointer'}>
+                  <Box flexDirection={'column'} fontSize={{base:"md",lg:"xl"}} p='10px' _hover={{ color:'#FDCB00' }}  cursor={'pointer'} onClick={()=>{handleSide('/')}} >
                        
-                       <Text  fontWeight={'bold'}>Projects</Text>
+                       <Text  fontWeight={'light'}>Projects</Text>
                   </Box>
-                  <Box flexDirection={'column'} size='lg' p='10px' _hover={{ color:'#FDCB00' }}  cursor={'pointer'}>
+                  <Box flexDirection={'column'} fontSize={{base:"md",lg:"xl"}} p='10px' _hover={{ color:'#FDCB00' }}  cursor={'pointer'} onClick={()=>{handleSide('/contact')}} >
                        
-                       <Text  fontWeight={'bold'}>Contact US</Text>
+                       <Text  fontWeight={'light'}>Contact US</Text>
                   </Box>
               </HStack>           
             </Flex>
@@ -105,40 +110,36 @@ import {
             placement='left'
             onClose={onClose}
             finalFocusRef={btnRef}
+            
           >
             <DrawerOverlay />
-            <DrawerContent>
-            <DrawerHeader textAlign={'center'}  >
-                <Avatar
-                    
-                    size={'xl'}
-                    src={
-                        '/images/Nexus-Logo-02.png'
-                    }
-                />
+            <DrawerContent bg={'black'} >
+            <DrawerHeader textAlign={'center'} w={'40%'}  m={'auto'} >
+                
+                <Image src='/images/Nexus-Logo-02.png' alt='drawer-img' />
                 
             </DrawerHeader>
             <hr />
               <DrawerCloseButton />              
               <DrawerBody >
-                  <VStack alignItems={'flex-start'} >
-                      <Button w='100%'  size='lg' p='10px' columnGap={'10px'} onClick={()=>{handleSide('/')}}  _hover={{ color:'teal' }} >
+                  <Stack alignItems={'center'} gap={8} color={'white'} >
+                      <HStack w='100%'   size='lg' p='10px' columnGap={'10px'} onClick={()=>{handleSide('/')}}  _hover={{ color:'#FDCB00' }} cursor={'pointer'}  >
                           <Icon   as={MdHome} boxSize={5}  /> 
                           <Text  fontWeight={'bold'}>Home</Text>
-                      </Button>
-                      <Button w='100%' size='lg' p='10px' columnGap={'10px'} onClick={()=>{handleSide('/sell')}} _hover={{ color:'teal' }} >
-                          <Icon   as={MdSell} boxSize={5}  /> 
-                          <Text  fontWeight={'bold'}>Sell</Text>
-                      </Button>
-                      <Button  w='100%'  size='lg' p='10px' columnGap={'10px'} onClick={()=>{handleSide('/')}} _hover={{ color:'teal' }} >
-                          <Icon  as={''} boxSize={5} /> 
-                          <Text  fontWeight={'bold'}>Help</Text>
-                      </Button>
-                      <Button  w='100%' size='lg' p='10px' columnGap={'10px'} onClick={()=>{handleSide('/')}} _hover={{ color:'teal' }}  >
-                          <Icon   as={MdOutlineMessage} boxSize={5} /> 
-                          <Text  fontWeight={'bold'}>Messages</Text>
-                      </Button>
-                  </VStack>  
+                      </HStack> 
+                      <HStack  w='100%'  size='lg' p='10px' columnGap={'10px'} onClick={()=>{handleSide('/about')}} _hover={{ color:'#FDCB00'  }} cursor={'pointer'}>
+                          <Icon   as={FaExclamationCircle} boxSize={5}  /> 
+                          <Text  fontWeight={'bold'}>About</Text>
+                      </HStack> 
+                      <HStack   w='100%'   size='lg' p='10px' columnGap={'10px'} onClick={()=>{handleSide('/')}} _hover={{ color:'#FDCB00'  }} cursor={'pointer'}>
+                          <Icon  as={IoGrid} boxSize={5} /> 
+                          <Text  fontWeight={'bold'}>Projects</Text>
+                      </HStack> 
+                      <HStack   w='100%'  size='lg' p='10px' columnGap={'10px'} onClick={()=>{handleSide('/contact')}} _hover={{ color:'#FDCB00'  }}  cursor={'pointer'}>
+                          <Icon   as={MdPermContactCalendar} boxSize={5} /> 
+                          <Text  fontWeight={'bold'}>Contact US</Text>
+                      </HStack> 
+                  </Stack>  
               </DrawerBody>          
             </DrawerContent>
           </Drawer>

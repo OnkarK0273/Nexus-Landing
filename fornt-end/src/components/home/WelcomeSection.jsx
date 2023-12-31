@@ -1,7 +1,18 @@
 import { Box, Button, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const WelcomeSection = () => {
+    const navigate = useNavigate()
+    
+      
+    // handleside
+    const handleSide = (val)=>{
+      navigate(val)
+      
+    }
+
+
   return (
     <Box  backgroundColor={"white"} >
         <Box  >
@@ -23,7 +34,7 @@ const WelcomeSection = () => {
                 </Box>
             </Stack>
             <Box>
-                <Button mt={5} p={"10px"} w={{base:"100px",md:'180px'}} fontSize={{base:"md",md:"xl"}} fontWeight={"bold"} color={'#FDCB00'} backgroundColor={'black'}>
+                <Button mt={5} p={"10px"} w={{base:"100px",md:'180px'}} fontSize={{base:"md",md:"xl"}} fontWeight={"bold"} color={'#FDCB00'} backgroundColor={'black'} onClick={()=>handleSide("/contact")} >
                     Know More
                 </Button>
             </Box>

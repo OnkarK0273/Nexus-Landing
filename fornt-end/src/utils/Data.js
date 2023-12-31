@@ -36,3 +36,30 @@ export const projectData =[
 
     }
 ]
+
+export const reviewData =[
+    {
+        name:"yash ghatage",
+        img:"/images/reviews/1.png",
+        review:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+        name:"yash ghatage2",
+        img:"/images/reviews/1.png",
+        review:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+        name:"yash ghatage3",
+        img:"/images/reviews/1.png",
+        review:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    }
+]
+
+
+export const aboutDetails = [
+    "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, comes from a line in section 1.10.32.",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ullam, commodi, sapiente quo et officia maiores, eius quod in molestiae facere est! Ipsum voluptatum culpa sapiente debitis, blanditiis minima aperiam vitae illo temporibus suscipit voluptate, et reiciendis accusamus ut qui?",
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint vitae repellat praesentium tempora! Esse harum ab natus beatae expedita tempore illo, doloribus ratione aliquid aut nostrum cupiditate laborum delectus nesciunt tempora, modi mollitia sunt minus. Consectetur, nostrum placeat eaque expedita sapiente voluptatum aperiam ea ducimus modi explicabo nisi. Nobis assumenda tempore doloremque veritatis! Alias ut aperiam amet error excepturi dolore, est sequi unde quisquam maxime dolor exercitationem neque autem ab! Voluptatibus quia voluptatem omnis fugit quae. Totam vel nam dolores.",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ullam, commodi, sapiente quo et officia maiores, eius quod in molestiae facere est! Ipsum voluptatum culpa sapiente debitis, blanditiis minima aperiam vitae illo temporibus suscipit voluptate, et reiciendis accusamus ut qui?",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ullam, commodi, sapiente quo et officia maiores, eius quod in molestiae facere est! Ipsum voluptatum culpa sapiente debitis, blanditiis minima aperiam vitae illo temporibus suscipit voluptate, et reiciendis accusamus ut qui?"
+]

@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <Box bg={'#636363'}  py={10} >
       <Headier text={'Contact Us'} />
-      <Stack direction={{base:"column",md:"row"}}  justifyContent={{base:"space-around",md:"space-between"}} w={"80%"} m={'auto'}  border={borderpicel} borderColor={'white'} h={{base:"230px",sm:"200px",md:"285px",lg:"270px",xl:"320px","2xl":"360px"}}  fontSize={{base:"md",md:"lg",lg:"xl",xl:"2xl","2xl":"4xl"}} >
+      <Stack direction={{base:"column",md:"row"}}  justifyContent={{base:"space-around",md:"space-between"}} w={"80%"} m={'auto'}  border={borderpicel} borderColor={'white'} h={{base:"230px",sm:"200px",md:"285px",lg:"270px",xl:"280px","2xl":"400px"}}  fontSize={{base:"md",md:"lg",lg:"xl",xl:"xl","2xl":"4xl"}} >
         <Stack border={borderpicel} borderColor={'white'} gap={10} w={{base:"100%",md:'40%'}}  >
           
           <Box  >
@@ -41,7 +41,7 @@ const Footer = () => {
 
         </Stack>
         <Stack  direction={'column'}  border={borderpicel} borderColor={'white'}  w={{base:"100%",md:'50%'}} justifyContent={'space-between'}  >
-          <Box w={'90%'} h={{md:"280",lg:"270px",xl:"215px",xl:"300px","2xl":"340px"}} backgroundColor={'gray.700'} m={'auto'}   display={{base:"none",md:"block"}} >
+          <Box w={'90%'} h={{md:"280",lg:"270px",xl:"215px",xl:"250px","2xl":"390px"}} backgroundColor={'gray.700'} m={'auto'}   display={{base:"none",md:"block"}} >
             
           </Box>
                    
