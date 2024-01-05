@@ -1,10 +1,15 @@
 import { Box, Button, Image, Stack, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { AnimatePresence,motion } from 'framer-motion'
+import Welcome1 from '../animation/Welcome1'
+import Welcome2 from '../animation/Welcome2'
 
 const WelcomeSection = () => {
     const navigate = useNavigate()
-    
+    const scrollRef = useRef(null)
+
+   
       
     // handleside
     const handleSide = (val)=>{
@@ -13,33 +18,41 @@ const WelcomeSection = () => {
     }
 
 
+  
+
+
   return (
-    <Box  backgroundColor={"white"} >
+    <Box  backgroundColor={"white"}   >
         <Box height={{base:"500px",md:"500px",lg:"700px",xl:"740px","2xl":"900px",}} w={'100%'} >
             <Image src='/images/welcome.png' width={'100%'} height={'100%'}  objectFit={'cover'} />
         </Box>
-        <Stack h={{base:"150px",md:"200px",lg:'220px'}}  justifyContent={"center"} align={"center"} flexDir={"column"} pb={10} pt={5} >
-            <Stack direction={"row"}  color={"#556258"}  justify={"center"} align={'center'}  gap={'40px'}  >
-                <Box>
-                    <Text fontSize={{base:"2xl",md:"2xl",lg:"2xl"}} fontWeight={"bold"}  color={'black'} >
-                    About US
-                    </Text>
-                </Box>
-                <Box w={{md:"450px",lg:"540px"}} p={'10px'} display={{base:"none",md:"block"}} fontSize={'middum'} border={'0px'} borderColor={'black'} >
-                    <Text  >
-                    Nestled amidst nature’s beauty, our premium eco & agro resort
-                    offers an enchanting escape for those seeking serenity and opulence.
-                    Experience the heights of comfort in our exquisite accommodations,
-                    </Text>
-                </Box>
-            </Stack>
-            <Box  >
+        <AnimatePresence>        
+            <Stack h={{base:"150px",md:"200px",lg:'220px'}}  justifyContent={"center"} align={"center"} flexDir={"column"} pb={10} pt={5} >
+                <motion.div
+                    initial={{opacity:0,x:80}}
+                    transition={{duration:"0.5"}}
+                    whileInView={{ opacity: 1 ,x:15}}
+                    
+                >
+                    <Stack direction={"row"}  color={"#556258"}  justify={"center"} align={'center'}  gap={'40px'}  >
+                        <Welcome1  />
+                        <Welcome2  />
+                    </Stack>
+                </motion.div>
+                <motion.div
+                    initial={{opacity:0,y:-80}}
+                    transition={{duration:"0.5"}}
+                    whileInView={{ opacity: 1 ,y:0}}
+                    
+                >
+                <Box  >   
                 <Button mt={5} p={"10px"} w={{base:"120px",md:'180px'}} fontSize={{base:"md",md:"xl",lg:"2xl"}} fontWeight={"bold"} color={'#FDCB00'} backgroundColor={'black'} onClick={()=>handleSide("/contact")} >
-                    Know More
-                </Button>
-            </Box>
-        </Stack>
-
+                        Know More
+                </Button>  
+                </Box>
+                </motion.div>
+            </Stack>
+        </AnimatePresence>
     </Box>
   )
 }

@@ -66,7 +66,7 @@ export default function Navbar2() {
         position="sticky"
         bg={"rgba(0, 0, 0, 0.8)"}
         top={"0"}
-        zIndex="2"
+        zIndex="10"
         py={4}
       >
         <Flex alignItems={"center"} justifyContent={"space-between"}>
