@@ -31,7 +31,7 @@ const ProjectContainer = ({data,index}) => {
 
 
   return (
-    <Box backgroundColor={index%2===1?"#232222":"black"} px={{base:5 ,md:28}}  py={10}   >
+    <Box backgroundColor={index%2===1?"#232222":"black"} px={{base:5 ,md:28}}  py={10} border={'0px'}  borderColor={'teal'}  >
       
         <Stack direction={{base:index%2===0?"column-reverse":"column-reverse",lg:index%2===0?"row":"row-reverse"}} justifyContent={'space-between'}  gap={'55px'} border={'0px'} borderColor={"white"}>
             
@@ -43,7 +43,6 @@ const ProjectContainer = ({data,index}) => {
                     initial={{opacity:0,x:80}}
                     transition={{duration:"0.5"}}
                     whileInView={{ opacity: 1 ,x:1}}
-                    
         >
                 <img src={data.img} alt={data.name} width={'90%'} style={{ margin:'auto',objectFit:"contain",borderRadius:"10px"}} />
                

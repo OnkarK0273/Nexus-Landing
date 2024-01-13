@@ -7,7 +7,7 @@ import Animation from '../components/home/Animation'
 
 const Home = () => {
   return (
-    <Box>
+    <Box  >
       <WelcomeSection/>
       {/* <Animation/> */}
       <ProjectSection/>

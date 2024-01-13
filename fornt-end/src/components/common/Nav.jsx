@@ -42,6 +42,7 @@ import { MdPermContactCalendar } from "react-icons/md";
 import { IoGrid } from "react-icons/io5";
 import { FaExclamationCircle } from "react-icons/fa";
 import ScrollNav from "./Scroll";
+import MenuComponent from "./Manu";
 
 export default function Navbar2() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -62,14 +63,15 @@ export default function Navbar2() {
   return (
     <>
       <Box
-        px={{ base: 5, md: 28 }}
-        position="sticky"
+        
+        position='fixed'
         bg={"rgba(0, 0, 0, 0.8)"}
         top={"0"}
-        zIndex="10"
+        zIndex="20"
         py={4}
+        width={'100%'}
       >
-        <Flex alignItems={"center"} justifyContent={"space-between"}>
+        <Flex alignItems={"center"} justifyContent={"space-between"} width={'80%'} m={'auto'} >  
           <IconButton
             size={"md"}
             ref={btnRef}
@@ -85,7 +87,7 @@ export default function Navbar2() {
             alignItems={"center"}
             display={flag ? { base: "none", md: "flex" } : "flex"}
           >
-            <Box mr={{ base: 5, md: 0 }} border={"0px"} color={"white"}>
+            <Box mr={{ base: 5, md: 0 }} border={"0px"} color={"white"} cursor={'pointer'} >
               <Image
                 height={{ base: "40px", md: "80px" }}
                 width={{ base: "40px", md: "80px" }}
@@ -98,7 +100,7 @@ export default function Navbar2() {
             </Box>
           </HStack>
 
-          <Flex alignItems={"center"}>
+          <Flex alignItems={"center"} border={'0px'} borderColor={'white'}   >
             <HStack
               as={"nav"}
               spacing={{ base: 5, lg: 10 }}
@@ -106,18 +108,7 @@ export default function Navbar2() {
               pr="15px"
               display={{ base: "none", md: "flex" }}
             >
-              <Box
-                flexDirection={"column"}
-                fontSize={{ base: "md", lg: "xl" }}
-                p="10px"
-                cursor={"pointer"}
-                _hover={{ color: "#FDCB00" }}
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                <Text fontWeight={"light"}>Home</Text>
-              </Box>
+              
               <Box
                 flexDirection={"column"}
                 fontSize={{ base: "md", lg: "xl" }}
@@ -138,9 +129,10 @@ export default function Navbar2() {
                 _hover={{ color: "#FDCB00" }}
                 cursor={"pointer"}
               >
-                <ScrollNav name={"Projects"}>
-                  <Text fontWeight={"light"}>Projects</Text>
-                </ScrollNav>
+                {/* <ScrollNav name={"Projects"}> */}
+                  {/* <Text fontWeight={"light"}>Projects</Text> */}
+                  <MenuComponent/>
+                {/* </ScrollNav> */}
               </Box>
               <Box
                 flexDirection={"column"}

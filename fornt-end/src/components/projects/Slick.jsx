@@ -18,7 +18,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export default function Carousel({images}) {
+export default function Slick({images}) {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState(null);

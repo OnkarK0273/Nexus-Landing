@@ -1,9 +1,11 @@
 import { Box, Grid, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import {motion} from 'framer-motion'
-import Carousel from './Slick'
+
 import Upanimation from '../animation/Upanimation'
 import Opacityanimation from '../animation/Opacityanimation'
+import Slick from './Slick'
+import Carousel from './Carsoual'
 
 
 
@@ -34,7 +36,7 @@ useEffect(()=>{
             </Box>
             </Opacityanimation>
                        
-                <Stack p={10} w={'100%'} >
+                <Stack  w={'80%'} m={'auto'} pt={10} >
                     <Heading color={'#FDCB00'}  > {data.name} </Heading>
                     <Stack gap={5}   >
                         {
@@ -57,9 +59,9 @@ useEffect(()=>{
 
             </Grid>
             <Box display={{base:"block",md:"none"}} >
-                <Carousel images={images}/>
+                <Slick images={images}/>
             </Box>
-            
+            <Carousel/>
 
         </Stack>
     </Box>
