@@ -1,6 +1,6 @@
 // MenuComponent.js
-import React, { useState } from 'react';
-import { Box, Menu, MenuButton, MenuList, MenuItem, Text,Button } from '@chakra-ui/react';
+import React from 'react';
+import { Box, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
 
 
 const MenuComponent = () => {
@@ -12,7 +12,7 @@ const MenuComponent = () => {
             <MenuButton >
                 Projects
             </MenuButton>
-            <MenuList bg={'black'}  color= "white"     >
+            <MenuList bg={'black'}  color= "white"  borderColor={'black'}   >
                 <MenuItem  bg={'black'} _hover={{color:"#FDCB00"}}  >Completed</MenuItem>
                 <MenuItem  bg={'black'} _hover={{color:"#FDCB00"}}>Working</MenuItem>
                

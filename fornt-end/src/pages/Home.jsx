@@ -3,7 +3,8 @@ import React from 'react'
 import WelcomeSection from '../components/home/WelcomeSection'
 import ProjectSection from '../components/home/ProjectSection'
 import ReviewSection from '../components/home/ReviewSection'
-import Animation from '../components/home/Animation'
+import Whatsapp from '../components/common/whatsapp'
+import Contact from '../components/home/ContactForm'
 
 const Home = () => {
   return (
@@ -12,6 +13,8 @@ const Home = () => {
       {/* <Animation/> */}
       <ProjectSection/>
       <ReviewSection/>
+      <Contact/>
+      <Whatsapp/>
     </Box>
   )
 }

@@ -1,11 +1,8 @@
-import { Box, Grid, Heading, Image, Stack, Text } from '@chakra-ui/react'
+import { Box,  Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
-import {motion} from 'framer-motion'
-
 import Upanimation from '../animation/Upanimation'
 import Opacityanimation from '../animation/Opacityanimation'
-import Slick from './Slick'
-import Carousel from './Carsoual'
+import ProjectCursol from './ProjectCursol'
 
 
 
@@ -45,23 +42,9 @@ useEffect(()=>{
                     </Stack>
                 </Stack>
             
-            <Grid templateColumns={{base:'repeat(1, 1fr)',md:'repeat(2, 1fr)',lg:'repeat(3, 1fr)'}} gap={6} p={20}  display={{base:"none",md:"grid"}} >
-
-                {
-                    images?.map((el,i)=>(
-                        <Box p={0} >
-                            <Upanimation>
-                            <Image src={el} key={i} />
-                            </Upanimation>
-                        </Box>
-                    ))
-                }
-
-            </Grid>
-            <Box display={{base:"block",md:"none"}} >
-                <Slick images={images}/>
-            </Box>
-            <Carousel/>
+            
+            <ProjectCursol/>
+            
 
         </Stack>
     </Box>

@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Stack, Text } from '@chakra-ui/react'
+import { Box} from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import Headier from './Headier'
 import { reviewData } from '../../utils/Data'
@@ -16,7 +16,7 @@ const ReviewSection = () => {
     },[])
   return (
     <Box>
-        <Box w={{base:"90%",md:'80%',lg:"80%"}} m={'auto'} py={10}  >
+        <Box w={{base:"90%",md:'80%',lg:"80%"}} m={'auto'} py={'20px'}  >
 
             <Headier text={'Review'}  />
             <Slide>

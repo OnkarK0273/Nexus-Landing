@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import { AnimatePresence,motion, useAnimation } from 'framer-motion'
+import React from 'react'
+
 import { Box, Text, useBreakpointValue } from '@chakra-ui/react'
 const Welcome2 = () => {
   const des = "Our commitment to crafting exceptional living spaces goes beyond building homes; we curate lifestyles. With successful projects like The First and The Hub, epitomizing refined urban living and modern luxury, we continue to redefine real estate excellence."
@@ -23,7 +23,7 @@ const Welcome2 = () => {
 
   return (
     <div>
-        <Box w={{md:"450px",lg:"600px"}} p={'10px'} display={{base:"none",md:"block"}} fontSize={'middum'} border={'0px'} borderColor={'black'}  >
+        <Box   display={{base:"none",md:"block"}} fontSize={'middum'} border={'0px'} borderColor={'black'}  >
             
                 <Text>
                 {truncateText(des,variant)}

@@ -1,13 +1,13 @@
 import { Box, Text } from '@chakra-ui/react'
-import React, { useRef } from 'react'
-import { AnimatePresence,motion, useAnimation } from 'framer-motion'
+import React from 'react'
+
 const Welcome1 = () => {
     
   return (
     <div>
         <Box  >
             
-                    <Text fontSize={{base:"2xl",md:"2xl",lg:"2xl"}} fontWeight={"bold"}  color={'black'} >
+                    <Text fontSize={'24px'} fontWeight={"bold"} width={'120px'}  color={'black'} >
 
                         About US
 

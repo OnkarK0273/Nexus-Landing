@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Stack, VStack ,Text, useMediaQuery, useBreakpointValue} from '@chakra-ui/react'
+import { Box, Heading, Image, Stack, VStack ,Text, useBreakpointValue} from '@chakra-ui/react'
 import { motion} from 'framer-motion'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -31,7 +31,7 @@ const ProjectContainer = ({data,index}) => {
 
 
   return (
-    <Box backgroundColor={index%2===1?"#232222":"black"} px={{base:5 ,md:28}}  py={10} border={'0px'}  borderColor={'teal'}  >
+    <Box backgroundColor={index%2===1?"#232222":"black"} px={{base:5 ,md:28}}  py={'20px'} border={'0px'}  borderColor={'teal'}  >
       
         <Stack direction={{base:index%2===0?"column-reverse":"column-reverse",lg:index%2===0?"row":"row-reverse"}} justifyContent={'space-between'}  gap={'55px'} border={'0px'} borderColor={"white"}>
             
@@ -55,7 +55,7 @@ const ProjectContainer = ({data,index}) => {
                             transition={{duration:"0.5"}}
                             whileInView={{ opacity: 1 ,x:1}}        
                 >
-                    <Heading color={'#FDCB00'} >{data.name}</Heading>
+                    <Heading color={'#FDCB00'} fontSize={'32px'} >{data.name}</Heading>
                  </motion.div>
                 </Box>
                 <Box  border={'0px'} borderColor={"white"} w={{base:"100%",lg:"50%"}} display={{base:"block",lg:"none"}} >
