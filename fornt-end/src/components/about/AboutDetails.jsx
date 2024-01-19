@@ -6,9 +6,9 @@ import Opacityanimation from '../animation/Opacityanimation'
 
 const AboutDetails = () => {
   return (
-    <Box  w={'80%'} m={'auto'}  position={'relative'} py={24}>
+    <Box  w={'80%'} m={'auto'}  position={'relative'} py={{base:'20px',md:'30px'}}>
         <Opacityanimation>
-          <Box w={'25%'}    position={'absolute'} bottom={'50px'} right={'-20px'}  opacity={'40%'} >
+          <Box w={{base:"25%",md:"10%"}}    position={'absolute'} bottom={'50px'} right={'-20px'}  opacity={'20%'} >
               <Image  src='/images/Nexus-Logo.png' alt='logo'/>
           </Box>
           </Opacityanimation>

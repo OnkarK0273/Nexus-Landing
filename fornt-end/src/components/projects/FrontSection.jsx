@@ -33,8 +33,8 @@ useEffect(()=>{
             </Box>
             </Opacityanimation>
                        
-                <Stack  w={'80%'} m={'auto'} pt={10} >
-                    <Heading color={'#FDCB00'}  > {data.name} </Heading>
+                <Stack  w={'80%'} m={'auto'} py={{base:'20px',md:'30px'}} border={'0px'} borderColor={'teal'}  >
+                    <Heading color={'#FDCB00'} fontSize={'32px'} > {data.name} </Heading>
                     <Stack gap={5}   >
                         {
                             data2?.map((el,i)=>(  <Upanimation><Text key={i} >{el}</Text></Upanimation> ))

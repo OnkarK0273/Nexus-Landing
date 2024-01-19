@@ -70,3 +70,7 @@ export const aboutDetails = [
 ]
 
 export const Links =[{name:'Projects',id:'projects'},{name:'Contact',id:'contact'}]
+
+export const webvideoSrc = 'https://res.cloudinary.com/dzvja514w/video/upload/v1704957964/nexus_home_poynpu.mp4';
+export const mobilevideoSrc = 'https://res.cloudinary.com/dzvja514w/video/upload/v1705629723/nexus-mobile.mp4'
+      

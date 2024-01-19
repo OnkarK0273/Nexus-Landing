@@ -31,7 +31,7 @@ const ProjectContainer = ({data,index}) => {
 
 
   return (
-    <Box backgroundColor={index%2===1?"#232222":"black"} px={{base:5 ,md:28}}  py={'20px'} border={'0px'}  borderColor={'teal'}  >
+    <Box backgroundColor={index%2===1?"#232222":"black"} px={{base:5 ,md:28}}  py={{base:'20px',md:'30px'}} border={'0px'}  borderColor={'teal'}  >
       
         <Stack direction={{base:index%2===0?"column-reverse":"column-reverse",lg:index%2===0?"row":"row-reverse"}} justifyContent={'space-between'}  gap={'55px'} border={'0px'} borderColor={"white"}>
             

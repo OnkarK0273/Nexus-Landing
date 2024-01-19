@@ -15,7 +15,8 @@ import {
 import { FaArrowCircleLeft } from "react-icons/fa"
 import { FaArrowCircleRight } from "react-icons/fa";
 import { useEffect, useState } from 'react';
-
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowLeft } from "react-icons/md"
 export default function ProjectCursol() {
     const images = [
         { name: 'Image 1', url: '/images/projects/The-First.jpg' },
@@ -41,35 +42,21 @@ export default function ProjectCursol() {
     return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, [currentIndex, images.length]);
   return (
-    <Box w={{base:'80%',lg:"900px",xl:"60%",'2xl':"45%"}} m={'auto'} border={'0px'} borderColor={'teal'} py={'20px'} >
+    <Box w={{base:'80%',lg:"900px",xl:"60%",'2xl':"40%"}} m={'auto'} border={'0px'} borderColor={'teal'} pt={{base:'20px',md:'30px'}} pb={{base:'30px',md:'30px'}}>
       <Stack
-        align={'center'}
+        align={{base:'left',md:"center"}}
         justify={'space-between'}
-        gap={10}
+        gap={5}
         direction={{ base: 'column', md: 'row' }}>
-        <Stack  spacing={{ base: 5, md: 10 }} border={'0px'} borderColor={'teal'} >
+        <Stack   border={'0x'} borderColor={'teal'} justify={'center'} >
           <Heading
             lineHeight={1.1}
             fontWeight={600}
             textAlign={'left'}
-            fontSize={{ base: '3xl', sm: '4xl', lg: '5xl' }}>
-            <Text
-              as={'span'}
-              position={'relative'}
-              _after={{
-                content: "''",
-                width: 'full',
-                height: '30%',
-                position: 'absolute',
-                bottom: 1,
-                left: 0,
-                bg: 'red.400',
-                zIndex: -1,
-              }}>
-              Write once,
-            </Text>
-            <br />
-            <Text as={'span'} color={'red.400'}>
+            fontSize={'32px' }>
+            
+            
+            <Text as={'span'} color={'#FDCB00'}>
             {images[currentIndex].name}
             </Text>
           </Heading>
@@ -80,11 +67,11 @@ export default function ProjectCursol() {
           justify={'center'}
           align={'center'}
           position={'relative'}
-          w={{base:"290px",md:'350px',lg:"500px",'2xl':"600px"}}>
+          w={{base:"100%",md:'350px',lg:"500px",'2xl':"600px"}}>
           
           <Box
             position={'relative'}
-            height={'400px'}
+            height={{base:"250px",md:'350px'}}
             rounded={'2xl'}
             boxShadow={'2xl'}
             width={'full'}
@@ -95,7 +82,7 @@ export default function ProjectCursol() {
               aria-label={'Play Button'}
               variant={'ghost'}
               _hover={{ bg: 'transparent' }}
-              icon={<FaArrowCircleLeft color={'tomato'} size={35} />}
+              icon={<MdKeyboardArrowLeft color={'#FDCB00'} size={35} />}
               size={'lg'}
               color={'white'}
               position={'absolute'}
@@ -109,7 +96,7 @@ export default function ProjectCursol() {
               aria-label={'Play Button'}
               variant={'ghost'}
               _hover={{ bg: 'transparent' }}
-              icon={<FaArrowCircleRight color={'tomato'} size={35} />}
+              icon={<MdKeyboardArrowRight color={'#FDCB00'} size={35} />}
               size={'lg'}
               color={'white'}
               position={'absolute'}

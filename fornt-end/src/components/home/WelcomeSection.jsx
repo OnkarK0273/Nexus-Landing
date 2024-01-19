@@ -1,23 +1,36 @@
-import { Box, Button, Heading,  Stack } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Button, Heading,  Stack, useBreakpointValue } from '@chakra-ui/react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AnimatePresence,motion } from 'framer-motion'
 import Welcome1 from '../animation/Welcome1'
 import Welcome2 from '../animation/Welcome2'
+import { mobilevideoSrc, webvideoSrc } from '../../utils/Data'
 
 const WelcomeSection = () => {
     const navigate = useNavigate()
+    const [toggle,setToggle] =useState(false)
+    const videoSrc = useBreakpointValue(
+        {
+          base: false,
+          md: true,
+          
+        } 
+    )
+
    
-    const videoSrc = 'https://res.cloudinary.com/dzvja514w/video/upload/v1704957964/nexus_home_poynpu.mp4';
-   
-      
+    
     // handleside
     const handleSide = (val)=>{
       navigate(val)
       
     }
 
+    // useEffect(()=>{
 
+    //     setToggle(videoSrc)
+
+    // },[videoSrc])
+    // console.log(vid)
   
 
 
@@ -27,14 +40,16 @@ const WelcomeSection = () => {
         position={'relative'}
         justify={'center'}
         align={'center'}
-        mt={2}
+        
         
         //  height={{base:"600px",md:"500px",lg:"700px",xl:"740px","2xl":"900px",}}
         // height={{base:"220px",md:"430px",lg:"570px",xl:"810px","2xl":"1440px",}}
           w={'100%'} objectFit={'cover'} >
             {/* <Image src='/images/welcome.png' width={'100%'} height={'100%'}  objectFit={'cover'} /> */}
-            <video   autoPlay loop muted width={'100%'} height={'500'}>
-                <source src={videoSrc}   type="video/mp4"  />
+            <video   autoPlay loop muted width={'100%'} height={'1350px'}>
+               {
+                toggle?<source src={webvideoSrc} type="video/mp4"/>:<source src={mobilevideoSrc} type="video/mp4"/>
+               } 
                     Your browser does not support the video tag.
             </video>
             <motion.div
@@ -51,7 +66,7 @@ const WelcomeSection = () => {
             <Stack 
             // h={{base:"175px",md:"240px",lg:'220px'}} 
              display={{base:"none",md:"flex"}}
-              align={"center"} flexDir={"column"} border={'0px'} borderColor={'teal'}  gap={'40px'} py={'20px'} >
+              align={"center"} flexDir={"column"} border={'0px'} borderColor={'teal'}  gap={'40px'} py={{base:'20px',md:'30px'}} >
                 <motion.div
                     initial={{opacity:0,x:50}}
                     transition={{duration:"0.5"}}

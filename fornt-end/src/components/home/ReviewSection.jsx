@@ -16,7 +16,7 @@ const ReviewSection = () => {
     },[])
   return (
     <Box>
-        <Box w={{base:"90%",md:'80%',lg:"80%"}} m={'auto'} py={'20px'}  >
+        <Box w={{base:"90%",md:'80%',lg:"80%"}} m={'auto'} py={{base:'20px',md:'30px'}}  >
 
             <Headier text={'Review'}  />
             <Slide>
