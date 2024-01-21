@@ -1,6 +1,6 @@
 import { AspectRatio, Box, HStack, Stack, Text, background } from '@chakra-ui/react'
 import React from 'react'
-import Headier from '../home/Headier'
+
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";

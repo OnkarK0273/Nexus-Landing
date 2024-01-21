@@ -37,9 +37,7 @@ export default function Contact() {
   return (
     <Container bg="black" maxW="full" mt={0} centerContent overflow="hidden"  py={{base:'20px',md:'30px'}} >
       <Headier text={'Contact Us'} />
-      <button onClick={setFlag.toggle}>
-        toggle 
-      </button>
+      
       <Flex  >
         <Box
           bg="#232222"
