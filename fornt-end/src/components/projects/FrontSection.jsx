@@ -33,7 +33,7 @@ useEffect(()=>{
             </Box>
             </Opacityanimation>
                        
-                <Stack  w={'80%'} m={'auto'} py={{base:'20px',md:'30px'}} border={'0px'} borderColor={'teal'}  >
+                <Stack  w={{base:'80%',"2xl":"56%"}} m={'auto'} py={{base:'20px',md:'30px'}} border={'0px'} borderColor={'teal'}  >
                     <Heading color={'#FDCB00'} fontSize={'32px'} > {data.name} </Heading>
                     <Stack gap={5}   >
                         {

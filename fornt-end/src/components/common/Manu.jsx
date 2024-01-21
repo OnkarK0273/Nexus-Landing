@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
 
 
-const MenuComponent = () => {
+const MenuComponent = ({color}) => {
  
 
   return (
@@ -12,9 +12,9 @@ const MenuComponent = () => {
             <MenuButton >
                 Projects
             </MenuButton>
-            <MenuList bg={'black'}  color= "white"  borderColor={'black'}   >
-                <MenuItem  bg={'black'} _hover={{color:"#FDCB00"}}  >Completed</MenuItem>
-                <MenuItem  bg={'black'} _hover={{color:"#FDCB00"}}>Working</MenuItem>
+            <MenuList bg={color}  color= "white"  borderColor={'black'}   >
+                <MenuItem  bg={color} _hover={{color:"#FDCB00"}}  >Completed</MenuItem>
+                <MenuItem  bg={color} _hover={{color:"#FDCB00"}}>Working</MenuItem>
                
                 
             </MenuList>

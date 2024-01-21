@@ -71,7 +71,7 @@ export default function Navbar2() {
         py={4}
         width={'100%'}
       >
-        <Flex alignItems={"center"} justifyContent={"space-between"} width={'80%'} m={'auto'} >  
+        <Flex alignItems={"center"} justifyContent={"space-between"} width={{base:'80%',"2xl":"56%"}} m={'auto'} >  
           <IconButton
             size={"md"}
             ref={btnRef}
@@ -105,7 +105,7 @@ export default function Navbar2() {
               as={"nav"}
               spacing={{ base: 5, lg: 10 }}
               justifyContent="space-evenly"
-              pr="15px"
+              pr="0px"
               display={{ base: "none", md: "flex" }}
             >
               
@@ -131,7 +131,7 @@ export default function Navbar2() {
               >
                 {/* <ScrollNav name={"Projects"}> */}
                   {/* <Text fontWeight={"light"}>Projects</Text> */}
-                  <MenuComponent/>
+                  <MenuComponent color={'black'} />
                 {/* </ScrollNav> */}
               </Box>
               <Box
@@ -165,20 +165,7 @@ export default function Navbar2() {
               <DrawerCloseButton />
               <DrawerBody>
                 <Stack alignItems={"center"} gap={8} color={"white"}>
-                  <HStack
-                    w="100%"
-                    size="lg"
-                    p="10px"
-                    columnGap={"10px"}
-                    onClick={() => {
-                      handleSide("/");
-                    }}
-                    _hover={{ color: "#FDCB00" }}
-                    cursor={"pointer"}
-                  >
-                    <Icon as={MdHome} boxSize={5} />
-                    <Text fontWeight={"bold"}>Home</Text>
-                  </HStack>
+                  
                   <HStack
                     w="100%"
                     size="lg"
@@ -203,9 +190,7 @@ export default function Navbar2() {
                   
                   >
                     <Icon as={IoGrid} boxSize={5} />
-                    <ScrollNav name={"Projects"}>
-                      <Text onClick={()=>{Closesidebar()}} fontWeight={"bold"}>Projects</Text>
-                    </ScrollNav>
+                    <MenuComponent color={'#232222'} />
                   </HStack>
                   <HStack
                     w="100%"

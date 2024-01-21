@@ -16,12 +16,12 @@ const ReviewSection = () => {
     },[])
   return (
     <Box>
-        <Box w={{base:"90%",md:'80%',lg:"80%"}} m={'auto'} py={{base:'20px',md:'30px'}}  >
+        <Box w={{base:"90%",md:'80%',lg:"80%","2xl":"56%"}} m={'auto'} py={{base:'20px',md:'30px'}}  >
 
             <Headier text={'Review'}  />
             <Slide>
                 {
-                    data?.map((el)=><ReviewContainer data={el}/>)
+                    data?.map((el,i)=><ReviewContainer data={el} key={i}/>)
                 }
             </Slide>
 

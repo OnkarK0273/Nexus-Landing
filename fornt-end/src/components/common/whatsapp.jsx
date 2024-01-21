@@ -28,7 +28,7 @@ const Whatsapp = () => {
             <WhatsappRipple/>
                 </Box>
             </PopoverTrigger>
-            <PopoverContent color='white' bg='blue.800' borderColor='blue.800'>
+            <PopoverContent color='white' bg="#232222" borderColor='#232222'>
                 <PopoverArrow />
                 <PopoverCloseButton />
                 <PopoverBody>

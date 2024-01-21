@@ -22,7 +22,7 @@ const Footer = () => {
                     whileInView={{ opacity: 1 ,y:1}}
                     
         >
-           <Stack direction={{base:"column",lg:"row"}}  justifyContent={{base:"space-around",md:"space-between"}} w={{base:"80%",md:"80%",lg:"70%","2xl":"60%"}} m={'auto'}  border={boder1} borderColor={'white'} gap={10}
+           <Stack direction={{base:"column",lg:"row"}}  justifyContent={{base:"space-around",md:"space-between"}} w={{base:"80%",md:"80%",lg:"70%","2xl":"57%"}} m={'auto'}  border={boder1} borderColor={'white'} gap={10}
             //  h={{base:"230px",sm:"200px",md:"285px",lg:"270px",xl:"280px","2xl":"400px"}}  
              fontSize={{base:"sm",md:"md"}}
               >

@@ -1,21 +1,16 @@
-import { Box, Button, Heading,  Stack, useBreakpointValue } from '@chakra-ui/react'
+import { Box, Button, Heading,  Stack, useBreakpointValue, useMediaQuery } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AnimatePresence,motion } from 'framer-motion'
 import Welcome1 from '../animation/Welcome1'
 import Welcome2 from '../animation/Welcome2'
 import { mobilevideoSrc, webvideoSrc } from '../../utils/Data'
+import {isMobile} from 'react-device-detect'
 
 const WelcomeSection = () => {
     const navigate = useNavigate()
     const [toggle,setToggle] =useState(false)
-    const videoSrc = useBreakpointValue(
-        {
-          base: false,
-          md: true,
-          
-        } 
-    )
+    
 
    
     
@@ -25,12 +20,8 @@ const WelcomeSection = () => {
       
     }
 
-    // useEffect(()=>{
+    console.log(isMobile)
 
-    //     setToggle(videoSrc)
-
-    // },[videoSrc])
-    // console.log(vid)
   
 
 
@@ -40,18 +31,31 @@ const WelcomeSection = () => {
         position={'relative'}
         justify={'center'}
         align={'center'}
-        
-        
-        //  height={{base:"600px",md:"500px",lg:"700px",xl:"740px","2xl":"900px",}}
-        // height={{base:"220px",md:"430px",lg:"570px",xl:"810px","2xl":"1440px",}}
-          w={'100%'} objectFit={'cover'} >
-            {/* <Image src='/images/welcome.png' width={'100%'} height={'100%'}  objectFit={'cover'} /> */}
-            <video   autoPlay loop muted width={'100%'} height={'1350px'}>
+        w={'100%'} objectFit={'cover'} >
+            {/* <video   autoPlay loop muted width={'100%'} height={'1350px'}>
                {
                 toggle?<source src={webvideoSrc} type="video/mp4"/>:<source src={mobilevideoSrc} type="video/mp4"/>
                } 
                     Your browser does not support the video tag.
-            </video>
+            </video> */}
+            {isMobile ? (
+              // Render mobile video for smaller screens
+              <video autoPlay loop muted width={'100%'} height={'1350px'}>
+                <source src={mobilevideoSrc} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              // Render web video for larger screens
+              <video autoPlay loop muted width={'100%'} height={'1350px'}>
+                <source src={webvideoSrc} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
+
+            
+            
+              
+            
             <motion.div
                     initial={{opacity:0,y:-40}}
                     transition={{duration:"0.5"}}
@@ -84,10 +88,11 @@ const WelcomeSection = () => {
                     whileInView={{ opacity: 1 ,y:0}}
                     
                 >
-                <Box border={'0px'} borderColor={'teal'} >   
-                <Button  p={"5px"}  fontSize={'md'} w={'120px'} fontWeight={"bold"} color={'#FDCB00'} backgroundColor={'black'} onClick={()=>handleSide("/contact")} >
-                        Know More
-                </Button>  
+                <Box border={'0px'} borderColor={'teal'} >  
+                    <Button  p={"5px"}  fontSize={'md'} w={'120px'} fontWeight={"bold"} color={'#FDCB00'} backgroundColor={'black'} onClick={()=>handleSide("/about")} _hover={{bg:"#FDCB00",color:"black"}} >
+                  Know More
+                  </Button> 
+                
                 </Box>
                 </motion.div>
             </Stack>
