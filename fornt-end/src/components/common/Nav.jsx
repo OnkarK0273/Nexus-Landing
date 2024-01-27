@@ -190,7 +190,7 @@ export default function Navbar2() {
                   
                   >
                     <Icon as={IoGrid} boxSize={5} />
-                    <MenuComponent color={'#232222'} />
+                    <MenuComponent color={'#232222'} fontWeight={'bold'} />
                   </HStack>
                   <HStack
                     w="100%"

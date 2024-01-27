@@ -16,10 +16,7 @@ const ProjectContainer = ({data,index}) => {
     )
 
     const handleSession = (el)=>{
-
-        sessionStorage.setItem("data",JSON.stringify(el))
-        navigate('/projectsDetails')
-
+        navigate(el)
     }
 
     
@@ -76,7 +73,7 @@ const ProjectContainer = ({data,index}) => {
                             transition={{duration:"0.5"}}
                             whileInView={{ opacity: 1 ,x:1}}        
                 >
-                    <Text color={'#FDCB00'} onClick={()=>handleSession(data)} >Know more</Text>
+                    <Text color={'#FDCB00'} onClick={()=>handleSession(data.path)} >Know more</Text>
                 </motion.div>
                 </Box>
             </VStack>

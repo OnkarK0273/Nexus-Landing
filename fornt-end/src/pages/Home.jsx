@@ -13,7 +13,6 @@ const Home = () => {
   return (
     <Box  >
       <WelcomeSection/>
-      {/* <Animation/> */}
       <ProjectSection/>
       <ReviewSection/>
       <Contact/>
