@@ -131,7 +131,7 @@ export default function Navbar2() {
               >
                 {/* <ScrollNav name={"Projects"}> */}
                   {/* <Text fontWeight={"light"}>Projects</Text> */}
-                  <MenuComponent color={'black'} />
+                  <MenuComponent color={'black'} handleSide={handleSide} />
                 {/* </ScrollNav> */}
               </Box>
               <Box
@@ -190,7 +190,7 @@ export default function Navbar2() {
                   
                   >
                     <Icon as={IoGrid} boxSize={5} />
-                    <MenuComponent color={'#232222'} fontWeight={'bold'} />
+                    <MenuComponent color={'#232222'} fontWeight={'bold'} handleSide={handleSide}/>
                   </HStack>
                   <HStack
                     w="100%"

@@ -1,25 +1,31 @@
-import { Box, Image, Stack, Text } from '@chakra-ui/react'
+import { Box, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import { aboutDetails } from '../../utils/Data'
 import Upanimation from '../animation/Upanimation'
 import Opacityanimation from '../animation/Opacityanimation'
+import Body from '../projects/poject_details/Body'
+import Description from '../projects/poject_details/Description'
+import MissionVision from './MissionVision'
 
 const AboutDetails = () => {
   return (
-    <Box  w={{base:'80%',"2xl":"57%"}} m={'auto'}  position={'relative'} py={{base:'20px',md:'30px'}}>
-        <Opacityanimation>
-          <Box w={{base:"25%",md:"10%","2xl":"5%"}}    position={'absolute'} bottom={'50px'} right={'-20px'}  opacity={'20%'} >
-              <Image  src='/images/Nexus-Logo.png' alt='logo'/>
+    <Body>
+        <Stack direction={{base:"column",lg:'row'}} justify={{base:"flex-start",lg:"space-between"}} >
+          <Box w={{base:"100%",lg:'550px',"2xl":"680px"}} >
+            <Description des={aboutDetails.des[0]} />
           </Box>
-          </Opacityanimation>
-        <Stack gap={10}  fontSize={{base:"md",md:'xl'}} >
-            {
-                aboutDetails?.map((el)=> <Upanimation><Text zIndex={2} >{el}</Text></Upanimation> )
-            }
+          <Box w={{base:"100%",lg:'550px',"2xl":"680px"}} >
+            <Description des={aboutDetails.des[1]} />
+          </Box>
         </Stack>
 
-
-    </Box>
+        <Box>
+          <Description des={aboutDetails.des[2]} />
+        </Box>
+        
+        <MissionVision title={'Mission:'} des={aboutDetails.mission} />
+        <MissionVision title={'Vision:'} des={aboutDetails.vision} />
+    </Body>
   )
 }
 

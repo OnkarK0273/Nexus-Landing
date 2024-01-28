@@ -132,10 +132,11 @@ export const reviewData =[
 ]
 
 
-export const aboutDetails = [
-    "Our commitment to crafting exceptional living spaces goes beyond building homes; we curate lifestyles. With successful projects like The First and The Hub, epitomizing refined urban living and modern luxury, we continue to redefine real estate excellence.",
-    "Anticipate unparalleled elegance in our upcoming projects, Nexus One, Nexus Heights and Collector-approved NA plotting project Dr. Dongare Colony. Join us in creating a legacy of modern urban living."
-]
+export const aboutDetails = {
+    des:['Our commitment to crafting exceptional living spaces goes beyond building homes; we curate lifestyles. At the heart of our mission lies a dedication to not only constructing residences but also meticulously designing and shaping unique lifestyles that resonate with contemporary sensibilities. Our track record of success is evident in iconic developments such as The First and The Hub, which stand as epitomes of refined urban living and contemporary luxury. These projects serve as testaments to our unwavering commitment to redefine the standards of excellence in the real estate industry.','As we continue to push boundaries and explore new horizons, our upcoming ventures promise to set new benchmarks in sophistication and innovation. The much-anticipated Nexus One and Nexus Heights projects are poised to usher in a new era of unparalleled elegance, offering residents an exclusive experience that seamlessly blends modern design, cutting-edge technology, and sustainable living practices. These developments are not merely structures; they are meticulously crafted environments that inspire a sense of harmony and well-being.','In addition to these groundbreaking residential ventures, we are thrilled to introduce the Collector-approved NA plotting project, Dr. Dongare Colony. This unique initiative reflects our commitment to providing diverse housing solutions and underscores our respect for meticulous planning and adherence to regulatory standards.'],
+    mission:"Our mission is to transcend the conventional boundaries of real estate development by crafting exceptional living spaces that not only redefine luxury but also elevate the overall lifestyle experience. Through meticulous attention to detail and a commitment to innovation, we aim to create iconic projects that stand as a testament to our passion for modern urban living.",
+    vision:"Our vision is to be a trailblazer in the real estate industry, setting new standards for sophistication, functionality, and sustainability. We aspire to create a legacy of modern urban living that resonates with the evolving aspirations of our clients. By prioritizing quality, innovation, and customer satisfaction, we envision becoming synonymous with unparalleled excellence in the real estate development sector."
+}
 
 export const Links =[{name:'Projects',id:'projects'},{name:'Contact',id:'contact'}]
 

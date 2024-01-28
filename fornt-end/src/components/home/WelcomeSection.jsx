@@ -64,7 +64,7 @@ const WelcomeSection = () => {
                     
                 >
             <Heading  fontSize={{base:"40px",md:"80px",lg:'140px'}} color={'#FDCB00'}    >Welcome</Heading>
-                </motion.div>
+            </motion.div>
         </Stack>
         <AnimatePresence>        
             <Stack 

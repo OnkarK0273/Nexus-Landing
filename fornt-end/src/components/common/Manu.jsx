@@ -4,14 +4,11 @@ import { Box, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
 
-const MenuComponent = ({color,fontWeight}) => {
-  const navigate = useNavigate();
-  const handleSide = (val) => {
-    navigate(val);
-    
-  };
+const MenuComponent = ({color,fontWeight,handleSide}) => {
+  
+  
   return (
-    <Box>
+    <Box zIndex={20} >
       <Menu  >
             <MenuButton fontWeight={fontWeight} >
                 Projects

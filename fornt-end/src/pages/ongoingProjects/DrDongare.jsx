@@ -1,4 +1,4 @@
-import { Box, Image, Text} from '@chakra-ui/react'
+import { Box} from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import Poster from '../../components/projects/poject_details/Poster'
 import Amenities from '../../components/projects/poject_details/Amenities'
