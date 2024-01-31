@@ -23,7 +23,7 @@ const NexusOne = () => {
     <Body> 
       <ScannerBox src={data.Scanner} />
         <Box w={{base:"100%",lg:'771px'}} m={'auto'} >
-          <Description des={data.details} />
+          <Description des={data.details} w={'731px'}/>
         </Box>
         <Gallery  location={data.location} thumbnail={data.thumbnail} imges={data.images} />
       

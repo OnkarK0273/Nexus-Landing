@@ -27,10 +27,15 @@ const ProjectContainerContent = ({name,img,des,path}) => {
   };
 
   return (
+  <Box 
+    border={"0px"}
+    borderColor={"white"}
+    w={{ base: "100%", lg: "50%" }} >
     <VStack
+          w={'90%'}
+          m={'auto'}
           gap={5}
           align={{ base: "center", lg: "flex-start" }}
-          w={{ base: "100%", lg: "50%" }}
         >
           <Box>
             <motion.div
@@ -58,7 +63,7 @@ const ProjectContainerContent = ({name,img,des,path}) => {
               borderRadius={"10px"}
             />
           </Box>
-          <Box display={{ base: "none", lg: "block" }}>
+          <Box display={{ base: "none", lg: "block" }}  w={'90%'} >
             <motion.div
               initial={{ opacity: 0, x: -80 }}
               transition={{ duration: "0.5" }}
@@ -80,7 +85,8 @@ const ProjectContainerContent = ({name,img,des,path}) => {
               </Text>
             </motion.div>
           </Box>
-        </VStack>
+    </VStack>
+  </Box> 
   )
 }
 

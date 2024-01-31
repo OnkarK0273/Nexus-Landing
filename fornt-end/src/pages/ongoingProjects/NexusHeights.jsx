@@ -20,7 +20,7 @@ const NexusHeights = () => {
     <>
     <Box>
       <Poster src={data.img2} alt={data.name}  />
-      <Amenities src={data.Amenities}  alt={data.name}/>
+      <Amenities src={data.Amenities}  alt={data.name} w={'1059px'}  h={'161px'} />
     </Box>
     <Body>
         <ScannerBox src={data.Scanner} />

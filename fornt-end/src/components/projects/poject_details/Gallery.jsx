@@ -7,7 +7,7 @@ const Gallery = ({thumbnail,location,imges}) => {
   return (
     <Box border={'0px'} borderColor={'teal'} >
             <Heading mb={'20px'} >Gallery</Heading>
-            <Stack direction={{base:"column",lg:"row"}}  justify={{base:"space-between","2xl":"space-around"}}  >
+            <Stack direction={{base:"column",lg:"row"}}  justify={{base:"space-between","2xl":"space-between"}}  >
               <GalleryImg thumbnail={thumbnail} imges={imges}/>
               <GalleryRight location={location} />
             </Stack>

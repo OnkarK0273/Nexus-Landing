@@ -9,9 +9,11 @@ const ProjectContainer = ({ data, index }) => {
       backgroundColor={index % 2 === 1 ? "#232222" : "black"}
       px={{ base: 5, md: 28 }}
       py={{ base: "20px", md: "30px" }}
+      mb={'40px'}
       border={"0px"}
+      borderRadius={'20px'}
       borderColor={"teal"}
-      w={{ base: "100%", "2xl": "1440px" }}
+      w={{ base: "100%", "2xl": "1326px" }}
     >
       <Stack
         direction={{

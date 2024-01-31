@@ -8,7 +8,7 @@ const Projectmapongoing = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <VStack>
+    <VStack mt={{base:"60px",md:"80px","2xl":"100px"}}  >
         {
           ongoingProjects.map((el,index)=><ProjectContainer key={index} data={el} index={index} />)
         }

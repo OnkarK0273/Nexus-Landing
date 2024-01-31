@@ -15,7 +15,7 @@ const { isOpen, onOpen, onClose } = useDisclosure()
         onOpen()
     }
   return (
-    <Box w={{base:"100%",lg:'600px'}} cursor={'pointer'}  position="relative" onMouseEnter={mouseHower} onMouseLeave={mouseExit} onClick={openModal}  >
+    <Box w={{base:"100%",lg:'600px',"2xl":"679px"}} cursor={'pointer'}  position="relative" onMouseEnter={mouseHower} onMouseLeave={mouseExit} onClick={openModal}  >
         <Image src={thumbnail} opacity={opacity.img} alt={'Thumbnail'} width={'100%'} objectFit={'cover'}/>
         <Heading position="absolute"
         top="45%"

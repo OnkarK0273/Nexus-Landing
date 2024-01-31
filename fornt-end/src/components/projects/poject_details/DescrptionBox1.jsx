@@ -8,7 +8,7 @@ const DescrptionBox1 = ({des,facilities,features}) => {
     <Box>
         <Stack direction={{base:"column",lg:'row'}}  justify={'space-between'}  >
               <Stack direction={'column'} gap={'20px'} w={{base:"100%",lg:'577px'}} >
-                <Description des={des} />
+                <Description des={des} w={'577px'} />
                 <Listpoints title={'Facilities:'}  data={facilities}/>
               </Stack>
               <Box w={{base:"100%",lg:'509px'}} >

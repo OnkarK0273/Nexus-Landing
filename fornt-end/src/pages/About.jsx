@@ -16,6 +16,7 @@ const About = () => {
   return (
     <Box>
       <FrontBanner/>
+      
       <AboutDetails/>
     </Box>
   )

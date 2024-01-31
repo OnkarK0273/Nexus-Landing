@@ -71,7 +71,7 @@ export default function Navbar2() {
         py={4}
         width={'100%'}
       >
-        <Flex alignItems={"center"} justifyContent={"space-between"} width={{base:'80%',"2xl":"56%"}} m={'auto'} >  
+        <Flex alignItems={"center"} justifyContent={"space-between"} width={{base:'80%',"2xl":"1326px"}} m={'auto'} >  
           <IconButton
             size={"md"}
             ref={btnRef}

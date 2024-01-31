@@ -1,10 +1,10 @@
 import { Box, Text } from '@chakra-ui/react'
 import React from 'react'
 
-const Description = ({des}) => {
+const Description = ({des,w}) => {
   return (
-    <Box>
-        <Text>
+    <Box w={{base:"none","2xl":w}}  >
+        <Text lineHeight={'27px'} fontSize={{base:'18px',"2xl":"24px"}} >
             {des}
         </Text>
     </Box>

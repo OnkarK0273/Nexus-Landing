@@ -11,10 +11,10 @@ const AboutDetails = () => {
   return (
     <Body>
         <Stack direction={{base:"column",lg:'row'}} justify={{base:"flex-start",lg:"space-between"}} >
-          <Box w={{base:"100%",lg:'550px',"2xl":"680px"}} >
+          <Box w={{base:"100%",lg:'550px',"2xl":"629px"}} >
             <Description des={aboutDetails.des[0]} />
           </Box>
-          <Box w={{base:"100%",lg:'550px',"2xl":"680px"}} >
+          <Box w={{base:"100%",lg:'550px',"2xl":"629px"}} >
             <Description des={aboutDetails.des[1]} />
           </Box>
         </Stack>

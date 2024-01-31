@@ -9,7 +9,7 @@ const Projectmap = () => {
   }, []);
   return (
     <>
-      <VStack>
+      <VStack mt={{base:"60px",md:"80px","2xl":"100px"}} >
         {
           completedProjects.map((el,index)=><ProjectContainer key={index} data={el} index={index} />)
         }
