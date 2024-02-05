@@ -25,7 +25,7 @@ const ReviewContainer = ({data}) => {
                     <Image  src={img} width={{base:"40%",md:'50%',lg:"40%","2xl":"40%"}} objectFit={'cover'} m={'auto'} />
                 </Box>
                 <Stack width={{base:"80%",md:'60%'}} justifyContent={'space-between'}  border={'0px'} borderColor={'white'}  pr={0} >
-                    <Text fontSize={{base:"sm",md:"sm",lg:"md",xl:"lg"}}  >
+                    <Text fontSize={'18px'}  >
                         {truncateText(review,variant)}
                     </Text>
                     <Stack direction={{base:"column",md:'row'}}  border={'0px'} borderColor={'white'} alignItems={'center'} gap={5} >

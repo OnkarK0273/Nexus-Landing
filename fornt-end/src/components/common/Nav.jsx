@@ -111,20 +111,20 @@ export default function Navbar2() {
               
               <Box
                 flexDirection={"column"}
-                fontSize={{ base: "md", lg: "xl" }}
+                
                 p="10px"
                 cursor={"pointer"}
                 onClick={() => {
                   handleSide("/about");
                 }}
               >
-                <Text fontWeight={"light"} _hover={{ color: "#FDCB00" }}>
+                <Text fontWeight={"light"} _hover={{ color: "#FDCB00" }} fontSize={{base:'16px',lg:'18px'}} >
                   About
                 </Text>
               </Box>
               <Box
                 flexDirection={"column"}
-                fontSize={{ base: "md", lg: "xl" }}
+                fontSize={{base:'16px',lg:'18px'}}
                 p="10px"
                 _hover={{ color: "#FDCB00" }}
                 cursor={"pointer"}
@@ -136,14 +136,18 @@ export default function Navbar2() {
               </Box>
               <Box
                 flexDirection={"column"}
-                fontSize={{ base: "md", lg: "xl" }}
+                fontSize={{base:'16px',lg:'18px'}}
                 p="10px"
                 _hover={{ color: "#FDCB00" }}
                 cursor={"pointer"}
+                onClick={() => {
+                  handleSide("/Contact");
+                }}
+                
               >
-                <ScrollNav name={"contact"}>
-                  <Text fontWeight={"light"}>Contact US</Text>
-                </ScrollNav>
+                
+                  <Text fontWeight={"light"}  >Contact US</Text>
+                
               </Box>
             </HStack>
           </Flex>
@@ -158,18 +162,19 @@ export default function Navbar2() {
           >
             <DrawerOverlay />
             <DrawerContent bg={"black"}>
-              <DrawerHeader textAlign={"center"} w={"40%"} m={"auto"}>
-                <Image src="/images/Nexus-Logo-02.png" alt="drawer-img" />
+              <DrawerHeader textAlign={"center"} w={"35%"} m={"auto"}>
+                <Image src="/images/Nexus-Logo-02.png" alt="drawer-img"   />
               </DrawerHeader>
               <hr />
               <DrawerCloseButton />
               <DrawerBody>
-                <Stack alignItems={"center"} gap={8} color={"white"}>
+                <Stack alignItems={"center"} gap={'5px'} color={"white"}  >
                   
                   <HStack
                     w="100%"
                     size="lg"
                     p="10px"
+                    
                     columnGap={"10px"}
                     onClick={() => {
                       handleSide("/about");
@@ -177,35 +182,44 @@ export default function Navbar2() {
                     _hover={{ color: "#FDCB00" }}
                     cursor={"pointer"}
                   >
-                    <Icon as={FaExclamationCircle} boxSize={5} />
-                    <Text fontWeight={"bold"}>About</Text>
+                    
+                    <Text >About</Text>
                   </HStack>
+
+                 <Box height={'1px'}  border={'1px'} borderColor={'#3f3f3f'} w={'100%'} ></Box>
+                  
                   <HStack
                     w="100%"
                     size="lg"
                     p="10px"
+                   
                     columnGap={"10px"}
                     _hover={{ color: "#FDCB00" }}
                     cursor={"pointer"}
                   
                   >
-                    <Icon as={IoGrid} boxSize={5} />
-                    <MenuComponent color={'#232222'} fontWeight={'bold'} handleSide={handleSide}/>
+                    
+                    <MenuComponent color={'#232222'}  handleSide={handleSide}/>
                   </HStack>
+
+                  <Box height={'1px'}  border={'1px'} borderColor={'#3f3f3f'} w={'100%'} ></Box>
+
                   <HStack
                     w="100%"
                     size="lg"
                     p="10px"
+                   
                     columnGap={"10px"}
                     _hover={{ color: "#FDCB00" }}
                     cursor={"pointer"}
                     
                   >
-                    <Icon as={MdPermContactCalendar} boxSize={5} />
+                    
                     <ScrollNav name={"contact"}  >
-                      <Text onClick={()=>{Closesidebar()}}  fontWeight={"bold"}>Contact US</Text>
+                      <Text onClick={()=>{Closesidebar()}}  >Contact US</Text>
                     </ScrollNav>
                   </HStack>
+                  <Box height={'1px'}  border={'1px'} borderColor={'#3f3f3f'} w={'100%'} ></Box>
                 </Stack>
               </DrawerBody>
             </DrawerContent>

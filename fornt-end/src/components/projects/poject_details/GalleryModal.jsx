@@ -8,6 +8,8 @@ import {
     ModalCloseButton, 
   } from '@chakra-ui/react'
 import Slick from '../Slick'
+import { drDongeVideoURL } from '../../../utils/Data'
+import Modalvideo from './Modalvideo'
 const GalleryModal = ({ isOpen,imges,onClose}) => {
     
   return (
@@ -19,7 +21,9 @@ const GalleryModal = ({ isOpen,imges,onClose}) => {
           <ModalHeader color={'white'} >Gallery</ModalHeader>
           <ModalCloseButton  color={'white'} />
           <ModalBody>
-            <Slick images={imges} />
+            {
+              imges[0] === drDongeVideoURL ? <Modalvideo images={imges[0]}  /> : <Slick images={imges} />  }
+            
           </ModalBody>
         </ModalContent>
       </Modal>

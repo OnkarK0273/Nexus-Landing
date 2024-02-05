@@ -89,7 +89,7 @@ const WelcomeSection = () => {
                     
                 >
                 <Box border={'0px'} borderColor={'teal'} >  
-                    <Button  p={"5px"}  fontSize={'md'} w={'120px'} fontWeight={"bold"} color={'#FDCB00'} backgroundColor={'black'} onClick={()=>handleSide("/about")} _hover={{bg:"#FDCB00",color:"black"}} >
+                    <Button  p={"5px"}  fontSize={'18px'} w={'140px'} fontWeight={"bold"} color={'#FDCB00'} backgroundColor={'black'} onClick={()=>handleSide("/about")} _hover={{bg:"#FDCB00",color:"black"}} >
                   Know More
                   </Button> 
                 

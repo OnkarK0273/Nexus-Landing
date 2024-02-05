@@ -20,7 +20,7 @@ const DrDongare = () => {
       </Box>
       <Body>
           <DescriptionBox4 des1={data.details} des2={data.facilities} des3={data.location_advantage} />
-          <Gallery  location={data.location} thumbnail={data.thumbnail} imges={data.images} />
+          <Gallery  location={data.location} thumbnail={data.thumbnail} imges={data.images}  brochure={data.brochure} />
           
       </Body>
     </>

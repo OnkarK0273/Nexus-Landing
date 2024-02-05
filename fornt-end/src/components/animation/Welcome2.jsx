@@ -25,7 +25,7 @@ const Welcome2 = () => {
     <div>
         <Box   display={{base:"none",md:"block"}} fontSize={'middum'} border={'0px'} borderColor={'black'}  >
             
-                <Text>
+                <Text fontSize={'18px'} >
                 {truncateText(des,variant)}
                 </Text>
             

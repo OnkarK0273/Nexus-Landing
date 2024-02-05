@@ -23,7 +23,7 @@ const TheFirst = () => {
       
       <ScannerBox src={data.Scanner} />
         <DescriptionBox2 des1={data.details[0]} des2={data.details[1]} des3={data.details[2]} des4={data.details[3]} />
-        <Gallery  location={data.location} thumbnail={data.thumbnail} imges={data.images} />
+        <Gallery  location={data.location} thumbnail={data.thumbnail} imges={data.images}   brochure={data.brochure} />
       
     </Body>
     </>

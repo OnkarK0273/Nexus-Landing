@@ -11,6 +11,7 @@ import NexusOne from './ongoingProjects/NexusOne'
 import TheFirst from './completedProjects/TheFirst'
 import TheHub from './completedProjects/TheHub'
 import DrDongare from './ongoingProjects/DrDongare'
+import Contactus from './Contact'
 
 const MainRoutes = () => {
   return (
@@ -25,6 +26,7 @@ const MainRoutes = () => {
         <Route path='/TheFirst' element={<TheFirst/>} />
         <Route path='/TheHub' element={<TheHub/>} />
         <Route path='/DrDongare' element={<DrDongare/>} />
+        <Route path='/Contact' element={<Contactus/>} />
     </Routes>
   )
 }

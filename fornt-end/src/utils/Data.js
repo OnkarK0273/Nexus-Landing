@@ -52,7 +52,8 @@ export const ongoingProjects = [
     location:" Beside Datta Mandir, Mahdik Vasahat,Kolhapur.",
     thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856864/NexusGroup.com/Projects/Nexus%20One/3-14_1_q11rdz.png",
     images:["/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg"],
-    path:"/NexusOne"
+    path:"/NexusOne",
+    brochure:"https://drive.google.com/file/d/1PB9KF1bsdbQQnim0ipwCJsnn2mdwFk0p/view?usp=sharing"
 
 },{
     name:"Nexus Height",
@@ -67,7 +68,8 @@ export const ongoingProjects = [
     location:"C.S. NO. 510/B, Ghatge Colony, Near Arya Hospital, Kadamwadi Road, Kolhapur-416003.",
     thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856817/NexusGroup.com/Projects/The%20Heights/adk_lobby_hi_rez_2_sge3wh.png",
     images:["/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg"],
-    path:"/NexusHeights"
+    path:"/NexusHeights",
+    brochure:"https://drive.google.com/file/d/1aHENvldBZZUyfCQ3DM8JezZZLyDHqOMj/view?usp=sharing"
 
 },{
     name:"Dr Dongare Colony",
@@ -80,8 +82,9 @@ export const ongoingProjects = [
     Amenities:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856076/NexusGroup.com/Projects/Dr%20Dongare%20Colony/Group_20_otmuvv.svg",
     location:"Datta Colony, Besides Kaneri Lake, Near Water Tank, Kaneri",
     thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856267/NexusGroup.com/Projects/Dr%20Dongare%20Colony/9-09_1_w4q4um.png",
-    images:["/images/Nexus-One.jpg","/images/projects/The-Hub.jpg","/images/Nexus-One.jpg","/images/projects/The-Hub.jpg","/images/Nexus-One.jpg","/images/projects/The-Hub.jpg","/images/Nexus-One.jpg","/images/projects/The-Hub.jpg","/images/Nexus-One.jpg"],
-    path:"/DrDongare"
+    images:["https://res.cloudinary.com/dzvja514w/video/upload/v1707118296/NexusGroup.com/Projects/Dr%20Dongare%20Colony/Dr._Dongre_Colony_Nexus_v4_1_i5lvzo.mp4"],
+    path:"/DrDongare",
+    brochure:""
 
 }
 ]
@@ -96,7 +99,8 @@ export const completedProjects = [
         thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856952/NexusGroup.com/Projects/The%20Hub/DSC07974_1_rwncpu.png",
         location:"C.S.No. 510/B, Behind Arya Hospital, Ghatge Colony, Kadamwadi Road, Kolhapur-416003.",
         images:["/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg"],
-        path:"/TheHub"
+        path:"/TheHub",
+        brochure:""
 
     },{
         name:"The First",
@@ -109,7 +113,8 @@ export const completedProjects = [
         location:"R.S. No.741/1, Plot no.20, Sambhajinagar, Kolhapur. 416012",
         thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856901/NexusGroup.com/Projects/The%20First/ZYD03042_copy_1_fcfiff.png",
         images:["/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg"],
-        path:"/TheFirst"
+        path:"/TheFirst",
+        brochure:"https://drive.google.com/file/d/18YsfDWJxX9khbcmcOoCtGWoGFjEtLjj0/view"
         
     }
 ]
@@ -131,6 +136,7 @@ export const reviewData =[
     }
 ]
 
+export const drDongeVideoURL = 'https://res.cloudinary.com/dzvja514w/video/upload/v1707118296/NexusGroup.com/Projects/Dr%20Dongare%20Colony/Dr._Dongre_Colony_Nexus_v4_1_i5lvzo.mp4'
 
 export const aboutDetails = {
     des:['Our commitment to crafting exceptional living spaces goes beyond building homes; we curate lifestyles. At the heart of our mission lies a dedication to not only constructing residences but also meticulously designing and shaping unique lifestyles that resonate with contemporary sensibilities. Our track record of success is evident in iconic developments such as The First and The Hub, which stand as epitomes of refined urban living and contemporary luxury. These projects serve as testaments to our unwavering commitment to redefine the standards of excellence in the real estate industry.','As we continue to push boundaries and explore new horizons, our upcoming ventures promise to set new benchmarks in sophistication and innovation. The much-anticipated Nexus One and Nexus Heights projects are poised to usher in a new era of unparalleled elegance, offering residents an exclusive experience that seamlessly blends modern design, cutting-edge technology, and sustainable living practices. These developments are not merely structures; they are meticulously crafted environments that inspire a sense of harmony and well-being.','In addition to these groundbreaking residential ventures, we are thrilled to introduce the Collector-approved NA plotting project, Dr. Dongare Colony. This unique initiative reflects our commitment to providing diverse housing solutions and underscores our respect for meticulous planning and adherence to regulatory standards.'],
@@ -141,5 +147,20 @@ export const aboutDetails = {
 export const Links =[{name:'Projects',id:'projects'},{name:'Contact',id:'contact'}]
 
 export const webvideoSrc = 'https://res.cloudinary.com/dzvja514w/video/upload/v1704957964/nexus_home_poynpu.mp4';
-export const mobilevideoSrc = 'https://res.cloudinary.com/dzvja514w/video/upload/v1705629723/nexus-mobile.mp4'
+export const mobilevideoSrc = 'https://res.cloudinary.com/dzvja514w/video/upload/v1705629723/nexus-mobile.mp4';
+
+export const footerIcons = {
+    call:"https://res.cloudinary.com/dzvja514w/image/upload/v1706954418/NexusGroup.com/footer/call_srhmd5.svg",
+    mail :"https://res.cloudinary.com/dzvja514w/image/upload/v1706954418/NexusGroup.com/footer/message_xhd3df.svg",
+    location :"https://res.cloudinary.com/dzvja514w/image/upload/v1705855643/NexusGroup.com/Projects/Isolation_Mode_jodr7e.svg",
+    fb:"https://res.cloudinary.com/dzvja514w/image/upload/v1706954418/NexusGroup.com/footer/fb_ujh4o4.svg",
+    insta:"https://res.cloudinary.com/dzvja514w/image/upload/v1706954418/NexusGroup.com/footer/insta_snb0rq.svg",
+    creadai:"https://res.cloudinary.com/dzvja514w/image/upload/v1706954418/NexusGroup.com/footer/creadai_lauhh3.svg"
+}
+
+export const socialLinks = {fb:"https://www.facebook.com/profile.php?id=100093156417612&mibextid=2JQ9oc",insta:"https://www.instagram.com/nexusgroup.in?utm_source=qr&igsh=MXZqN3p4NDE2Znk5MQ==",creadai:"https://www.credaikolhapur.org/"}
+
+export const footerData = [{src:footerIcons.call,text:"+91 967 373 0404, +91 988 122 1175",link:"tel:+919673730404"},{src:footerIcons.mail,text:"info@thenexusgroup.in | devraj@thenexusgroup.in",link:"mailto:info@thenexusgroup.in"},{src:footerIcons.location,text:"506, A Wing, The Empire, Tarabai Park, Kolhapur.",link:"https://maps.app.goo.gl/G4jvqUw9W7tf34Qx7"}]
+
+
       

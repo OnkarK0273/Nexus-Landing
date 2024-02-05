@@ -12,7 +12,7 @@ const Listpoints = ({data,title,w}) => {
         </Heading>
         <UnorderedList gap={'30px'} >
         {
-            data?.map((el,i)=><ListItem key={i} mb={'10px'} fontSize={{base:'18px',"2xl":"24px"}} >{el}</ListItem>)
+            data?.map((el,i)=><ListItem key={i} mb={'10px'} fontSize={'18px'} >{el}</ListItem>)
         }
         </UnorderedList>
     </Box>

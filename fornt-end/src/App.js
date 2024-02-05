@@ -6,18 +6,20 @@ import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import Navbar2 from './components/common/Nav';
 import { useRef } from 'react';
+import Footer2 from './components/footer/Footer2';
 
 
 function App() {
   const scrollRef = useRef(null)
   return (
     <Box backgroundColor={"black"}  minH={'100vh'} color={"white"}  >
-      {/* <Navbar/> */}
+      
       <Navbar2/>
       <Box ref={scrollRef}  overflow={'hidden'} >
 
       <MainRoutes/>
-      <Footer/>
+      
+      <Footer2/>
       </Box>
       
     </Box  >

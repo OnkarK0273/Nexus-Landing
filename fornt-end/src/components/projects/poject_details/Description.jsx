@@ -4,7 +4,7 @@ import React from 'react'
 const Description = ({des,w}) => {
   return (
     <Box w={{base:"none","2xl":w}}  >
-        <Text lineHeight={'27px'} fontSize={{base:'18px',"2xl":"24px"}} >
+        <Text lineHeight={'27px'} fontSize={'18px'} >
             {des}
         </Text>
     </Box>

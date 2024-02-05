@@ -25,7 +25,7 @@ const NexusOne = () => {
         <Box w={{base:"100%",lg:'771px'}} m={'auto'} >
           <Description des={data.details} w={'731px'}/>
         </Box>
-        <Gallery  location={data.location} thumbnail={data.thumbnail} imges={data.images} />
+        <Gallery  location={data.location} thumbnail={data.thumbnail} imges={data.images}   brochure={data.brochure} />
       
     </Body>
     </>

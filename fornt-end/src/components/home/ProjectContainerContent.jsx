@@ -69,7 +69,7 @@ const ProjectContainerContent = ({name,img,des,path}) => {
               transition={{ duration: "0.5" }}
               whileInView={{ opacity: 1, x: 1 }}
             >
-              <Text display={{ base: "none", lg: "block" }}>
+              <Text display={{ base: "none", lg: "block" }} fontSize={'18px'} >
                 {truncateText(des, variant)}
               </Text>
             </motion.div>
