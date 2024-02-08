@@ -12,7 +12,7 @@ const FooterRight = () => {
       justify={'space-between'}
     >
       <VStack align={"flex-start"} justify={"space-around"} gap={'20px'}  >
-        <Text w={'375px'} >Welcome to refined urban living and modern luxury.</Text>
+        <Text w={{base:"none",lg:'375px'}} >Welcome to refined urban living and modern luxury.</Text>
         <HStack gap={"20px"}>
             <Link href={socialLinks.fb}  target="_blank" >
                 <Image src={footerIcons.fb} alt="fb"  width={'22px'} height={'22px'} />

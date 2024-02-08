@@ -63,7 +63,7 @@ const WelcomeSection = () => {
                     style={{position:"absolute" }}
                     
                 >
-            <Heading  fontSize={{base:"40px",md:"80px",lg:'140px'}} color={'#FDCB00'}    >Welcome</Heading>
+            <Heading  fontSize={{base:"20px",md:"30px",lg:'45px',xl:"85px"}} color={'#FDCB00'}    >Refined Urban Living.</Heading>
             </motion.div>
         </Stack>
         <AnimatePresence>        
