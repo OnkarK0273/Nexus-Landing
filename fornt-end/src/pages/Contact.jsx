@@ -7,6 +7,7 @@ import Map from '../components/contact/Map'
 const Contactus = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = 'TheNexusGroup | Contact'
       }, []);
   return (
     <Box mt={{base:"60px",md:"80px","2xl":"100px"}} >

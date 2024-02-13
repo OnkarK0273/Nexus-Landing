@@ -12,6 +12,7 @@ const TheFirst = () => {
   const [data,setData] = useState(completedProjects[1])
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = data.name
   }, []);
   return (
     <>

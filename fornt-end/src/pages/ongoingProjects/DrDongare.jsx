@@ -11,6 +11,7 @@ const DrDongare = () => {
   const [data,setData] = useState(ongoingProjects[2])
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = data.name
   }, []);
   return (
     <>

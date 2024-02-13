@@ -12,6 +12,7 @@ const NexusOne = () => {
   const [data,setData] = useState(ongoingProjects[0])
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = data.name
   }, []);
 
   return (

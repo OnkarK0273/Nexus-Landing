@@ -9,6 +9,7 @@ import Contact from '../components/contact/ContactForm'
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = 'TheNexusGroup'
   }, []);
   return (
     <Box  >

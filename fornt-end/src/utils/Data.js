@@ -39,6 +39,13 @@ export const projectData =[
 
     }
 ]
+const nexusoneImg = ['https://res.cloudinary.com/dzvja514w/image/upload/v1707790085/NexusGroup.com/Projects/Nexus%20One/10_v7u6u9.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790086/NexusGroup.com/Projects/Nexus%20One/11_xshksy.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790080/NexusGroup.com/Projects/Nexus%20One/1_jwp6ys.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790081/NexusGroup.com/Projects/Nexus%20One/2_di7x1v.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790080/NexusGroup.com/Projects/Nexus%20One/3_r8p1wz.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790084/NexusGroup.com/Projects/Nexus%20One/4_ap2hre.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790084/NexusGroup.com/Projects/Nexus%20One/5_j5swax.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790087/NexusGroup.com/Projects/Nexus%20One/6_k2cxmv.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790082/NexusGroup.com/Projects/Nexus%20One/7_d7y2d1.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790080/NexusGroup.com/Projects/Nexus%20One/8_v2ebia.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790084/NexusGroup.com/Projects/Nexus%20One/9_vcens9.jpg']
+
+const nexusheightImg = ['https://res.cloudinary.com/dzvja514w/image/upload/v1707790153/NexusGroup.com/Projects/The%20Heights/6_zhg4x0.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790152/NexusGroup.com/Projects/The%20Heights/5_onq6zh.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790151/NexusGroup.com/Projects/The%20Heights/2_tvkr2f.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790151/NexusGroup.com/Projects/The%20Heights/4_osi30s.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790151/NexusGroup.com/Projects/The%20Heights/3_crej2d.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790150/NexusGroup.com/Projects/The%20Heights/1_mjns7s.jpg']
+
+const thehubImg = ['https://res.cloudinary.com/dzvja514w/image/upload/v1707790183/NexusGroup.com/Projects/The%20Hub/7_ec4tp6.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790181/NexusGroup.com/Projects/The%20Hub/6_ggcxh9.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790178/NexusGroup.com/Projects/The%20Hub/5_eaxp4n.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790177/NexusGroup.com/Projects/The%20Hub/4_unzvlv.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790174/NexusGroup.com/Projects/The%20Hub/3_uah0os.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790174/NexusGroup.com/Projects/The%20Hub/2_nbh0sk.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790173/NexusGroup.com/Projects/The%20Hub/1_tn8cz0.jpg']
+
+const thefirstImg = ['https://res.cloudinary.com/dzvja514w/image/upload/v1707790139/NexusGroup.com/Projects/The%20First/13_juv80g.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790138/NexusGroup.com/Projects/The%20First/15_mdozg3.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790135/NexusGroup.com/Projects/The%20First/11_nvbcys.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790135/NexusGroup.com/Projects/The%20First/14_uvkqpz.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790135/NexusGroup.com/Projects/The%20First/12_enewpr.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790134/NexusGroup.com/Projects/The%20First/5_wrdp7m.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790133/NexusGroup.com/Projects/The%20First/8_ahefm2.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790133/NexusGroup.com/Projects/The%20First/6_dbgnvy.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790132/NexusGroup.com/Projects/The%20First/4_djfubg.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790131/NexusGroup.com/Projects/The%20First/10_rorder.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790130/NexusGroup.com/Projects/The%20First/7_tjmtc9.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790130/NexusGroup.com/Projects/The%20First/9_vjmqgv.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790127/NexusGroup.com/Projects/The%20First/2_gptow8.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790126/NexusGroup.com/Projects/The%20First/3_x7ujwa.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790124/NexusGroup.com/Projects/The%20First/1_mkpybs.jpg']
 
 export const ongoingProjects = [
 {
@@ -51,7 +58,7 @@ export const ongoingProjects = [
     Scanner:"https://res.cloudinary.com/dzvja514w/image/upload/v1705855546/NexusGroup.com/Projects/Nexus%20One/Group_13_jj2xu7.svg",
     location:" Beside Datta Mandir, Mahdik Vasahat,Kolhapur.",
     thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856864/NexusGroup.com/Projects/Nexus%20One/3-14_1_q11rdz.png",
-    images:["/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg"],
+    images:nexusoneImg,
     path:"/NexusOne",
     brochure:"https://drive.google.com/file/d/1PB9KF1bsdbQQnim0ipwCJsnn2mdwFk0p/view?usp=sharing"
 
@@ -67,7 +74,7 @@ export const ongoingProjects = [
     Scanner:"https://res.cloudinary.com/dzvja514w/image/upload/v1705855086/NexusGroup.com/Projects/The%20Heights/scanner_obvzlj.svg",
     location:"C.S. NO. 510/B, Ghatge Colony, Near Arya Hospital, Kadamwadi Road, Kolhapur-416003.",
     thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856817/NexusGroup.com/Projects/The%20Heights/adk_lobby_hi_rez_2_sge3wh.png",
-    images:["/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg"],
+    images:nexusheightImg,
     path:"/NexusHeights",
     brochure:"https://drive.google.com/file/d/1aHENvldBZZUyfCQ3DM8JezZZLyDHqOMj/view?usp=sharing"
 
@@ -98,7 +105,7 @@ export const completedProjects = [
         Amenities:"https://res.cloudinary.com/dzvja514w/image/upload/v1705855779/NexusGroup.com/Projects/The%20Hub/Group_14_ekspdn.svg",
         thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856952/NexusGroup.com/Projects/The%20Hub/DSC07974_1_rwncpu.png",
         location:"C.S.No. 510/B, Behind Arya Hospital, Ghatge Colony, Kadamwadi Road, Kolhapur-416003.",
-        images:["/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg"],
+        images:thehubImg,
         path:"/TheHub",
         brochure:""
 
@@ -112,7 +119,7 @@ export const completedProjects = [
         Scanner:"https://res.cloudinary.com/dzvja514w/image/upload/v1705855714/NexusGroup.com/Projects/The%20First/Group_13_ijtluq.svg",
         location:"R.S. No.741/1, Plot no.20, Sambhajinagar, Kolhapur. 416012",
         thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856901/NexusGroup.com/Projects/The%20First/ZYD03042_copy_1_fcfiff.png",
-        images:["/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg","/images/Nexus-One.jpg"],
+        images:thefirstImg,
         path:"/TheFirst",
         brochure:"https://drive.google.com/file/d/18YsfDWJxX9khbcmcOoCtGWoGFjEtLjj0/view"
         

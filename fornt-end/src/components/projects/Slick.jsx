@@ -16,6 +16,7 @@ const settings = {
   autoplaySpeed: 5000,
   slidesToShow: 1,
   slidesToScroll: 1,
+
 };
 
 export default function Slick({images}) {
@@ -35,7 +36,7 @@ export default function Slick({images}) {
     <Box
       m='auto'
       position={'relative'}
-      bg={'white'}
+     
       height={{base:"300px",md:'80vh'}}
       w={"100%"}
       borderRadius={'20px'}
@@ -56,7 +57,7 @@ export default function Slick({images}) {
       
       <IconButton
         aria-label="left-arrow"
-        bg='blackAlpha.400'
+        bg='whiteAlpha.400'
         borderRadius="full"
         position="absolute"
         left={side}
@@ -69,7 +70,7 @@ export default function Slick({images}) {
       {/* Right Icon */}
       <IconButton
         aria-label="right-arrow"
-        bg='blackAlpha.400'
+        bg='whiteAlpha.400'
         borderRadius="full"
         position="absolute"
         right={side}
@@ -89,7 +90,7 @@ export default function Slick({images}) {
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            backgroundSize="cover"
+            backgroundSize='contain'
             backgroundImage={`url(${url})`}
             p='5px'
           />
