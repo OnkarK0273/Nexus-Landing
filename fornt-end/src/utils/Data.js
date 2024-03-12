@@ -14,7 +14,7 @@ export const projectData =[
         path:"/NexusOne"
     },
     {
-        name:"Nexus Height",
+        name:"Nexus Heights",
         img:"/images/projects/Nexus-Heights.jpg",
         img2:"/images/Banner-Image/3.jpg",
         des:"Nexus Heights redefines urban living, an epitome of luxurious living where sophistication meets comfort. Experience a blend of elegance and convenience with various amenities designed to elevate your living experience.",
@@ -31,15 +31,15 @@ export const projectData =[
 
     },
     {
-        name:"Dr Dongare Colony",
+        name:"Dr Dongare Park",
         img:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856273/NexusGroup.com/Projects/Dr%20Dongare%20Colony/Rectangle_qda6kh.png",
         img2:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856273/NexusGroup.com/Projects/Dr%20Dongare%20Colony/Rectangle_qda6kh.png",
-        des:"Introducing Dr Dongare Colony by Nexus Group, a prestigious residential development in Kaneri, reminiscent of our renowned projects such as Nexus Heights and Nexus One. This meticulously planned colony offers Collector-approved N. A. plots with a ready final layout.",
+        des:"Introducing Dr Dongare Park by Nexus Group, a prestigious residential development in Kaneri, reminiscent of our renowned projects such as Nexus Heights and Nexus One. This meticulously planned colony offers Collector-approved N. A. plots with a ready final layout.",
         path:"/DrDongare"
 
     }
 ]
-const nexusoneImg = ['https://res.cloudinary.com/dzvja514w/image/upload/v1707790085/NexusGroup.com/Projects/Nexus%20One/10_v7u6u9.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790086/NexusGroup.com/Projects/Nexus%20One/11_xshksy.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790080/NexusGroup.com/Projects/Nexus%20One/1_jwp6ys.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790081/NexusGroup.com/Projects/Nexus%20One/2_di7x1v.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790080/NexusGroup.com/Projects/Nexus%20One/3_r8p1wz.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790084/NexusGroup.com/Projects/Nexus%20One/4_ap2hre.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790084/NexusGroup.com/Projects/Nexus%20One/5_j5swax.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790087/NexusGroup.com/Projects/Nexus%20One/6_k2cxmv.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790082/NexusGroup.com/Projects/Nexus%20One/7_d7y2d1.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790080/NexusGroup.com/Projects/Nexus%20One/8_v2ebia.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790084/NexusGroup.com/Projects/Nexus%20One/9_vcens9.jpg']
+const nexusoneImg = ['https://res.cloudinary.com/dzvja514w/image/upload/v1707790085/NexusGroup.com/Projects/Nexus%20One/10_v7u6u9.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790080/NexusGroup.com/Projects/Nexus%20One/1_jwp6ys.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790081/NexusGroup.com/Projects/Nexus%20One/2_di7x1v.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790080/NexusGroup.com/Projects/Nexus%20One/3_r8p1wz.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790084/NexusGroup.com/Projects/Nexus%20One/4_ap2hre.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790084/NexusGroup.com/Projects/Nexus%20One/5_j5swax.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790087/NexusGroup.com/Projects/Nexus%20One/6_k2cxmv.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790082/NexusGroup.com/Projects/Nexus%20One/7_d7y2d1.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790080/NexusGroup.com/Projects/Nexus%20One/8_v2ebia.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790084/NexusGroup.com/Projects/Nexus%20One/9_vcens9.jpg']
 
 const nexusheightImg = ['https://res.cloudinary.com/dzvja514w/image/upload/v1707790153/NexusGroup.com/Projects/The%20Heights/6_zhg4x0.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790152/NexusGroup.com/Projects/The%20Heights/5_onq6zh.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790151/NexusGroup.com/Projects/The%20Heights/2_tvkr2f.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790151/NexusGroup.com/Projects/The%20Heights/4_osi30s.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790151/NexusGroup.com/Projects/The%20Heights/3_crej2d.jpg','https://res.cloudinary.com/dzvja514w/image/upload/v1707790150/NexusGroup.com/Projects/The%20Heights/1_mjns7s.jpg']
 
@@ -56,21 +56,21 @@ export const ongoingProjects = [
     details:["Nexus One stands tall as a testament to our passion for creating iconic spaces. With its striking facade and meticulous attention to detail, this project offers a harmonious blend of modern aesthetics and functionality. Discover the perfect configuration that suits your needs.  Each layout has been meticulously crafted to maximize space utilization and enhance the overall living experience."],
     Amenities:"https://res.cloudinary.com/dzvja514w/image/upload/v1705855544/NexusGroup.com/Projects/Nexus%20One/Group_14_uhshtf.svg",
     Scanner:"https://res.cloudinary.com/dzvja514w/image/upload/v1705855546/NexusGroup.com/Projects/Nexus%20One/Group_13_jj2xu7.svg",
-    location:" Beside Datta Mandir, Mahdik Vasahat,Kolhapur.",
+    location:" Beside Datta Mandir, Mahdik Vasahat,Kolhapur 416012.",
     thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856864/NexusGroup.com/Projects/Nexus%20One/3-14_1_q11rdz.png",
     images:nexusoneImg,
     path:"/NexusOne",
     brochure:"https://drive.google.com/file/d/1PB9KF1bsdbQQnim0ipwCJsnn2mdwFk0p/view?usp=sharing"
 
 },{
-    name:"Nexus Height",
+    name:"Nexus Heights",
     img:"/images/projects/Nexus-Heights.jpg",
     img2:"/images/Banner-Image/2.jpg",
     des:"Nexus Heights redefines urban living, an epitome of luxurious living where sophistication meets comfort. Experience a blend of elegance and convenience with various amenities designed to elevate your living experience.",
     details:["Nexus Heights redefines urban living, an epitome of luxurious living where sophistication meets comfort. Experience a blend of elegance and convenience with various amenities designed to elevate your living experience.  From sustainable solar net metering to a dedicated electric car charging point for every parking space, we prioritize modern living with an eco-friendly touch."],
-    facilities:['piped gas connection','access control system','24-hour CCTV surveillance','video door phone.'],
+    facilities:['Gas pipe connection','access control system','24-hour CCTV surveillance','video door phone and intercom facility'],
     features:['The appealing external elevation','Grand entrance lobby','gated entry','rainwater harvesting','internal trimix concrete roads','8x passenger lifts','security cabin','auto-level gauge system for an Uninterrupted water supply through underground and overhead water tank provisions','robust fire fighting system','dedicated toilets for drivers, housekeeping, and security guards.'],
-    Amenities:"https://res.cloudinary.com/dzvja514w/image/upload/v1705854525/NexusGroup.com/Projects/The%20Heights/Amenities_cdfr4g.svg",
+    Amenities:"https://res.cloudinary.com/dzvja514w/image/upload/v1710208813/NexusGroup.com/Projects/The%20Heights/Group_14_aq0ccx.svg",
     Scanner:"https://res.cloudinary.com/dzvja514w/image/upload/v1705855086/NexusGroup.com/Projects/The%20Heights/scanner_obvzlj.svg",
     location:"C.S. NO. 510/B, Ghatge Colony, Near Arya Hospital, Kadamwadi Road, Kolhapur-416003.",
     thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856817/NexusGroup.com/Projects/The%20Heights/adk_lobby_hi_rez_2_sge3wh.png",
@@ -79,15 +79,15 @@ export const ongoingProjects = [
     brochure:"https://drive.google.com/file/d/1aHENvldBZZUyfCQ3DM8JezZZLyDHqOMj/view?usp=sharing"
 
 },{
-    name:"Dr Dongare Colony",
+    name:"Dr Dongare Park",
     img:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856273/NexusGroup.com/Projects/Dr%20Dongare%20Colony/Rectangle_qda6kh.png",
     img2:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856273/NexusGroup.com/Projects/Dr%20Dongare%20Colony/Rectangle_qda6kh.png",
-    des:"Introducing Dr Dongare Colony by Nexus Group, a prestigious residential development in Kaneri, reminiscent of our renowned projects such as Nexus Heights and Nexus One. This meticulously planned colony offers Collector-approved N. A. plots with a ready final layout.",
-    details:["Introducing Dr Dongare Colony by Nexus Group, a prestigious residential development in Kaneri, reminiscent of our renowned projects such as Nexus Heights and Nexus One. This meticulously planned colony offers Collector-approved N. A. plots with a ready final layout."],
+    des:"Introducing Dr Dongare Park by Nexus Group, a prestigious residential development in Kaneri, reminiscent of our renowned projects such as Nexus Heights and Nexus One. This meticulously planned colony offers Collector-approved N. A. plots with a ready final layout.",
+    details:["Introducing Dr Dongare Park by Nexus Group, a prestigious residential development in Kaneri, reminiscent of our renowned projects such as Nexus Heights and Nexus One. This meticulously planned colony offers Collector-approved N. A. plots with a ready final layout."],
     facilities:['independent electricity and water provisions','well-constructed concrete roads','cement gutters','open space','brick wall compound','dedicated amenities area.'],
     location_advantage:['Pune Bangalore Highway is just a 5-minute drive away','Gokul Shirgaon MIDc is conveniently located within 10 minutes'],
     Amenities:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856076/NexusGroup.com/Projects/Dr%20Dongare%20Colony/Group_20_otmuvv.svg",
-    location:"Datta Colony, Besides Kaneri Lake, Near Water Tank, Kaneri",
+    location:"Datta Colony, Besides Kaneri Lake, Near Water Tank, Kaneri 416234",
     thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856267/NexusGroup.com/Projects/Dr%20Dongare%20Colony/9-09_1_w4q4um.png",
     images:["https://res.cloudinary.com/dzvja514w/video/upload/v1707118296/NexusGroup.com/Projects/Dr%20Dongare%20Colony/Dr._Dongre_Colony_Nexus_v4_1_i5lvzo.mp4"],
     path:"/DrDongare",
@@ -101,7 +101,7 @@ export const completedProjects = [
         img:"/images/projects/The-Hub.jpg",
         img2:"/images/Banner-Image/4.jpg",
         des:"THE HUB, crafted by The Nexus Group, sets a new standard for living by seamlessly integrating designer finishes and state-of-the-art design with modern aesthetics. Elevating the concept of sophisticated living, The HUB pays meticulous attention to every detail, ensuring a premium and unparalleled residential experience.",
-        details:["THE HUB, crafted by The Nexus Group, sets a new standard for living by seamlessly integrating designer finishes and state-of-the-art design with modern aesthetics. Elevating the concept of sophisticated living, The HUB pays meticulous attention to every detail, ensuring a premium and unparalleled residential experience",'This exceptional residence provides a comprehensive array of amenities like:',['swift and efficient lifts','reliable and continuous supply of electricity and water','advanced surveillance systems and more'],"The HUB is a testament to The Nexus Group's commitment to offering a lifestyle of opulence and convenience.",'Standing proudly as one of the pioneering projects undertaken by the Nexus Group, The HUB signifies the beginning of a remarkable journey. With a focus on quality, innovation, and an unwavering dedication to excellence, The Nexus Group aims to redefine the standards of luxury living through iconic developments like The HUB.'],
+        details:["THE HUB, crafted by The Nexus Group, sets a new standard for living by seamlessly integrating designer finishes and state-of-the-art design with modern aesthetics. Elevating the concept of sophisticated living, The HUB pays meticulous attention to every detail, ensuring a premium and unparalleled residential experience",'This exceptional residence provides a comprehensive array of amenities like:',['swift and efficient lifts','reliable and continuous supply of electricity and water','advanced surveillance systems and more','appealing external elevation and entrance lobby'],"The HUB is a testament to The Nexus Group's commitment to offering a lifestyle of opulence and convenience.",'Standing proudly as one of the pioneering projects undertaken by the Nexus Group, The HUB signifies the beginning of a remarkable journey. With a focus on quality, innovation, and an unwavering dedication to excellence, The Nexus Group aims to redefine the standards of luxury living through iconic developments like The HUB.'],
         Amenities:"https://res.cloudinary.com/dzvja514w/image/upload/v1705855779/NexusGroup.com/Projects/The%20Hub/Group_14_ekspdn.svg",
         thumbnail:"https://res.cloudinary.com/dzvja514w/image/upload/v1705856952/NexusGroup.com/Projects/The%20Hub/DSC07974_1_rwncpu.png",
         location:"C.S.No. 510/B, Behind Arya Hospital, Ghatge Colony, Kadamwadi Road, Kolhapur-416003.",
@@ -167,7 +167,7 @@ export const footerIcons = {
 
 export const socialLinks = {fb:"https://www.facebook.com/profile.php?id=100093156417612&mibextid=2JQ9oc",insta:"https://www.instagram.com/nexusgroup.in?utm_source=qr&igsh=MXZqN3p4NDE2Znk5MQ==",creadai:"https://www.credaikolhapur.org/"}
 
-export const footerData = [{src:footerIcons.call,text:"+91 967 373 0404, +91 988 122 1175",link:"tel:+919673730404"},{src:footerIcons.mail,text:"info@thenexusgroup.in | devraj@thenexusgroup.in",link:"mailto:info@thenexusgroup.in"},{src:footerIcons.location,text:"506, A Wing, The Empire, Tarabai Park, Kolhapur.",link:"https://maps.app.goo.gl/G4jvqUw9W7tf34Qx7"}]
+export const footerData = [{src:footerIcons.call,text:"+91 967 373 0404, +91 844 603 8238",link:"tel:+919673730404"},{src:footerIcons.mail,text:"info@thenexusgroup.in | devraj@thenexusgroup.in",link:"mailto:info@thenexusgroup.in"},{src:footerIcons.location,text:"506, A Wing, The Empire, Tarabai Park, Kolhapur.",link:"https://maps.app.goo.gl/G4jvqUw9W7tf34Qx7"}]
 
 
       

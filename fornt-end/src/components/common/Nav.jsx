@@ -31,16 +31,11 @@ import { MdSell, MdOutlineMessage, MdHome } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import {
   HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  Search2Icon,
+  CloseIcon
 } from "@chakra-ui/icons";
-import { Link as Navlink } from "react-router-dom";
+
 import React, { useState, useEffect } from "react";
-import { IoMdHome } from "react-icons/io";
-import { MdPermContactCalendar } from "react-icons/md";
-import { IoGrid } from "react-icons/io5";
-import { FaExclamationCircle } from "react-icons/fa";
+
 import ScrollNav from "./Scroll";
 import MenuComponent from "./Manu";
 
@@ -146,7 +141,7 @@ export default function Navbar2() {
                 
               >
                 
-                  <Text fontWeight={"light"}  >Contact US</Text>
+                  <Text fontWeight={"light"}  >Contact Us</Text>
                 
               </Box>
             </HStack>

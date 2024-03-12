@@ -17,7 +17,7 @@ const FrontBanner = () => {
                     style={{position:"absolute" }}
                     
                 >
-            <Heading  fontSize={{base:"40px",md:"80px",lg:'120px'}} color={'#FDCB00'}    >About Us</Heading>
+            <Heading  fontSize={{base:"40px",md:"80px",lg:'120px'}} color={'#FDCB00'}>About Us</Heading>
             </motion.div>
         </Stack>
     </Box>
