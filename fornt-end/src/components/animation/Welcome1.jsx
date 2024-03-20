@@ -9,7 +9,7 @@ const Welcome1 = () => {
             
                     <Text fontSize={'32px'} fontWeight={"bold"} width={'170px'}  color={'black'} >
 
-                        About Us
+                        About us
 
                     </Text>
             

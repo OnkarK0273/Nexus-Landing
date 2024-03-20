@@ -16,7 +16,7 @@ const DrDongare = () => {
   return (
     <>
       <Box>
-        <Poster src={data.img2} alt={data.name} istext={true} />
+        <Poster src={data.img2} alt={data.name} istext={true} mobsrc={data.mob_img} />
         <Amenities src={data.Amenities}  alt={data.name}/>
       </Box>
       <Body>

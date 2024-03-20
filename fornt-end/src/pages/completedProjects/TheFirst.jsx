@@ -17,7 +17,7 @@ const TheFirst = () => {
   return (
     <>
     <Box>
-      <Poster src={data.img2} alt={data.name}  />
+      <Poster src={data.img2} alt={data.name} mobsrc={data.mob_img} />
       <Amenities src={data.Amenities}  alt={data.name}/>
     </Box>
     <Body >

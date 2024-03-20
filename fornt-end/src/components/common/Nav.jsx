@@ -141,7 +141,7 @@ export default function Navbar2() {
                 
               >
                 
-                  <Text fontWeight={"light"}  >Contact Us</Text>
+                  <Text fontWeight={"light"}  >Contact us</Text>
                 
               </Box>
             </HStack>
