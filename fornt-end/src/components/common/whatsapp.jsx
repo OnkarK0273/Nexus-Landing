@@ -16,7 +16,7 @@ import WhatsappRipple from './WhatsappRipple';
 
 const Whatsapp = () => {
 
-    const href = 'https://wa.me/919503504241?text=hii can i help u'
+    const href = 'https://wa.me/919673730404?text=Hello, I would like to know more about your projects.'
 
   return (
     <Box position={'fixed'}  bottom={'20px'} right={'20px'} zIndex={20} >
@@ -42,7 +42,7 @@ const Whatsapp = () => {
                         </Box>
                         <HStack bg={'black'} color={'white'} w={'180px'} p={2} borderRadius={5}  cursor={'pointer'} >
                             <IoLogoWhatsapp  size={'25px'} />
-                            <Link _hover={{ color: "#FDCB00" }} href={'#'} isExternal >Chat with us</Link>
+                            <Link _hover={{ color: "#FDCB00" }} href={href} isExternal >Chat with us</Link>
                         </HStack>
                     </VStack>
                     

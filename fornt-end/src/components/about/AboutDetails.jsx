@@ -10,19 +10,15 @@ import MissionVision from './MissionVision'
 const AboutDetails = () => {
   return (
     <Body>
-        <Stack direction={{base:"column",lg:'row'}} justify={{base:"flex-start",lg:"space-between"}} >
-          <Box w={{base:"100%",lg:'550px',"2xl":"629px"}} >
-            <Description des={aboutDetails.des[0]} />
-          </Box>
-          <Box w={{base:"100%",lg:'550px',"2xl":"629px"}} >
-            <Description des={aboutDetails.des[1]} />
-          </Box>
-        </Stack>
-
+        <Box >
+          <Description des={aboutDetails.des[0]} />
+        </Box>
+        <Box  >
+          <Description des={aboutDetails.des[1]} />
+        </Box>
         <Box>
           <Description des={aboutDetails.des[2]} />
         </Box>
-        
         <MissionVision title={'Mission:'} des={aboutDetails.mission} />
         <MissionVision title={'Vision:'} des={aboutDetails.vision} />
     </Body>

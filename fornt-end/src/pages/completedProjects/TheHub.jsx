@@ -17,7 +17,7 @@ const TheHub = () => {
     <>
       <Box>
         <Poster src={data.img2} alt={data.name}  />
-        {/* <Amenities src={data.Amenities}  alt={data.name}/> */}
+        <Amenities src={data.Amenities}  alt={data.name}/>
       </Box>
       <Body>
         <DescriptionBox3  des1={data.details[0]} des2={data.details[1]} des3={data.details[2]} des4={data.details[3]} des5={data.details[4]} />

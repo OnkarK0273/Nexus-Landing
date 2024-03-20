@@ -4,6 +4,7 @@ import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick';
+import Modalvideo from './poject_details/Modalvideo';
 
 // Settings for the slider
 const settings = {
@@ -18,7 +19,7 @@ const settings = {
   slidesToScroll: 1,
 
 };
-
+const videoURL = "https://res.cloudinary.com/dzvja514w/video/upload/v1707118296/NexusGroup.com/Projects/Dr%20Dongare%20Colony/Dr._Dongre_Colony_Nexus_v4_1_i5lvzo.mp4"
 export default function Slick({images}) {
   // As we have used custom buttons, we need a reference variable to
   // change the state
@@ -82,7 +83,7 @@ export default function Slick({images}) {
       </IconButton>
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
-        {images.map((url, index) => (
+        {images.map((url, index) =>
           <Box
             key={index}
             height={{base:"350px",md:"505px",lg:"75vh"}} 
@@ -94,7 +95,7 @@ export default function Slick({images}) {
             backgroundImage={`url(${url})`}
             p='5px'
           />
-        ))}
+        )}
       </Slider>
     </Box>
   );

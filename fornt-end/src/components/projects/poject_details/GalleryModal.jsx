@@ -21,9 +21,7 @@ const GalleryModal = ({ isOpen,imges,onClose}) => {
           <ModalHeader color={'white'} >Gallery</ModalHeader>
           <ModalCloseButton  color={'white'} />
           <ModalBody>
-            {
-              imges[0] === drDongeVideoURL ? <Modalvideo images={imges[0]}  /> : <Slick images={imges} />  }
-            
+            <Slick images={imges} /> 
           </ModalBody>
         </ModalContent>
       </Modal>
