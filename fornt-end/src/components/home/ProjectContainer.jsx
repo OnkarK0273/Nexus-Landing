@@ -25,7 +25,7 @@ const ProjectContainer = ({ data, index }) => {
         border={"0px"}
         borderColor={"white"}
       >
-        <ProjectContainerImg img={data.img} name={data.name} />
+        <ProjectContainerImg img={data.img} name={data.name} path={data.path}/>
         <ProjectContainerContent
           img={data.img}
           name={data.name}

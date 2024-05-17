@@ -11,7 +11,7 @@ const MenuComponent = ({color,fontWeight,handleSide}) => {
     <Box zIndex={20} >
       <Menu  >
             <MenuButton fontWeight={fontWeight} >
-                Projects
+               PROJECTS
             </MenuButton>
             <MenuList bg={color}  color= "white"  borderColor={'black'}   >
                 <MenuItem  bg={color} _hover={{color:"#FDCB00"}} onClick={()=>{handleSide('/completed')}} >Completed</MenuItem>

@@ -9,7 +9,7 @@ const GalleryRight = ({location,brochure}) => {
           <Link fontSize={'18px'} fontWeight={'bold'} target='_blank'  href={brochure} >Download Brochure</Link>
           </Center>
         }
-        <HStack w={{base:"100%",lg:'80%',xl:"462px"}} cursor={'pointer'} >
+        <HStack w={{base:"100%",lg:'80%',xl:"500px"}} cursor={'pointer'} >
             <Image src='https://res.cloudinary.com/dzvja514w/image/upload/v1705855643/NexusGroup.com/Projects/Isolation_Mode_jodr7e.svg' alt='location' />
             <Text fontSize={'18px'} >{location}</Text>
         </HStack>

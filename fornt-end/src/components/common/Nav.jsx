@@ -114,7 +114,7 @@ export default function Navbar2() {
                 }}
               >
                 <Text fontWeight={"light"} _hover={{ color: "#FDCB00" }} fontSize={{base:'16px',lg:'18px'}} >
-                  About
+                  ABOUT
                 </Text>
               </Box>
               <Box
@@ -141,7 +141,7 @@ export default function Navbar2() {
                 
               >
                 
-                  <Text fontWeight={"light"}  >Contact us</Text>
+                  <Text fontWeight={"light"}  >CONTACT US</Text>
                 
               </Box>
             </HStack>
@@ -178,7 +178,7 @@ export default function Navbar2() {
                     cursor={"pointer"}
                   >
                     
-                    <Text >About</Text>
+                    <Text >ABOUT</Text>
                   </HStack>
 
                  <Box height={'1px'}  border={'1px'} borderColor={'#3f3f3f'} w={'100%'} ></Box>
@@ -211,7 +211,7 @@ export default function Navbar2() {
                   >
                     
                     <ScrollNav name={"contact"}  >
-                      <Text onClick={()=>{Closesidebar()}}  >Contact US</Text>
+                      <Text onClick={()=>{Closesidebar()}}  >CONTACT US</Text>
                     </ScrollNav>
                   </HStack>
                   <Box height={'1px'}  border={'1px'} borderColor={'#3f3f3f'} w={'100%'} ></Box>

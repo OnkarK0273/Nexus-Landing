@@ -25,7 +25,7 @@ const NexusHeights = () => {
     </Box>
     <Body>
         <ScannerBox src={data.Scanner} />
-        <DescrptionBox1 des={data.details}  features={data.features}  facilities={data.facilities} />
+        <DescrptionBox1 des={data.details}  features={data.list2}  facilities={data.list1} />
         <Gallery  location={data.location} thumbnail={data.thumbnail} imges={data.images}  brochure={data.brochure} />
     </Body>
     </>

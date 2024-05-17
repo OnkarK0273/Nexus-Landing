@@ -53,6 +53,8 @@ const ProjectContainerContent = ({name,img,des,path}) => {
             borderColor={"white"}
             w={{ base: "100%", lg: "50%" }}
             display={{ base: "block", lg: "none" }}
+            onClick={() => handleSession(path)}
+            cursor={'pointer'}
           >
             <Image
               src={img}

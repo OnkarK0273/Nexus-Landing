@@ -7,9 +7,9 @@ const Welcome1 = () => {
     <div>
         <Box  >
             
-                    <Text fontSize={'32px'} fontWeight={"bold"} width={'170px'}  color={'black'} >
+                    <Text fontSize={'28px'} fontWeight={"bold"} width={'170px'}  color={'black'} >
 
-                        About us
+                        ABOUT US
 
                     </Text>
             
