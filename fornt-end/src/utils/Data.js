@@ -66,8 +66,8 @@ export const ongoingProjects = [
 },{
     name:"Nexus Heights",
     img:"https://res.cloudinary.com/dzvja514w/image/upload/v1707790152/NexusGroup.com/Projects/The%20Heights/5_onq6zh.jpg",
-    img2:"/images/Banner-Image/2.jpg",
-    mob_img:"https://res.cloudinary.com/dzvja514w/image/upload/v1710934879/NexusGroup.com/Projects/The%20Heights/Nexus_Hights_Mobile_vyyjjl.jpg",
+    img2:"https://res.cloudinary.com/dzvja514w/image/upload/v1716040916/NexusGroup.com/Projects/The%20Heights/Web-Banner-Nexus-Hights_1_bbpits.jpg",
+    mob_img:"https://res.cloudinary.com/dzvja514w/image/upload/v1716040949/NexusGroup.com/Projects/The%20Heights/Nexus_Hights_Mobile_vyyjjl.jpg",
     des:"Nexus Heights redefines urban living, an epitome of luxurious living where sophistication meets comfort. Experience a blend of elegance and convenience with various amenities designed to elevate your living experience.",
     details:["Nexus Heights redefines urban living, an epitome of luxurious living where sophistication meets comfort. Experience a blend of elegance and convenience with various amenities designed to elevate your living experience.  From sustainable solar net metering to a dedicated electric car charging point for every parking space, we prioritize modern living with an eco-friendly touch."],
     facilities:['Piped gas connection','access control system','24-hour CCTV surveillance','video door phone and intercom facility'],
