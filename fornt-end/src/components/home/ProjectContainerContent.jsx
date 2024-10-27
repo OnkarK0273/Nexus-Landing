@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
 
 const ProjectContainerContent = ({name,img,des,path}) => {
-
   const navigate = useNavigate();
 
   const variant = useBreakpointValue({
@@ -27,26 +26,27 @@ const ProjectContainerContent = ({name,img,des,path}) => {
   };
 
   return (
-  <Box 
-    border={"0px"}
-    borderColor={"white"}
-    w={{ base: "100%", lg: "50%" }} >
-    <VStack
+    <Box 
+      border={"0px"}
+      borderColor={"white"}
+      w={{ base: "100%", lg: "50%" }}
+    >
+      <motion.div
+        initial={{ opacity: 0, x: -80 }}
+        whileInView={{ opacity: 1, x: 1 }}
+        transition={{ duration: "0.5" }}
+        viewport={{ once: true }}
+      >
+        <VStack
           w={'90%'}
           m={'auto'}
           gap={5}
           align={{ base: "center", lg: "flex-start" }}
         >
           <Box>
-            <motion.div
-              initial={{ opacity: 0, x: -80 }}
-              transition={{ duration: "0.5" }}
-              whileInView={{ opacity: 1, x: 1 }}
-            >
-              <Heading color={"#FDCB00"} fontSize={"32px"}>
-                {name}
-              </Heading>
-            </motion.div>
+            <Heading color={"#FDCB00"} fontSize={"32px"}>
+              {name}
+            </Heading>
           </Box>
           <Box
             border={"0px"}
@@ -65,30 +65,19 @@ const ProjectContainerContent = ({name,img,des,path}) => {
               borderRadius={"10px"}
             />
           </Box>
-          <Box display={{ base: "none", lg: "block" }}  w={'90%'} >
-            <motion.div
-              initial={{ opacity: 0, x: -80 }}
-              transition={{ duration: "0.5" }}
-              whileInView={{ opacity: 1, x: 1 }}
-            >
-              <Text display={{ base: "none", lg: "block" }} fontSize={'18px'} >
-                {truncateText(des, variant)}
-              </Text>
-            </motion.div>
+          <Box display={{ base: "none", lg: "block" }} w={'90%'}>
+            <Text display={{ base: "none", lg: "block" }} fontSize={'18px'}>
+              {truncateText(des, variant)}
+            </Text>
           </Box>
           <Box cursor={"pointer"}>
-            <motion.div
-              initial={{ opacity: 0, x: -80 }}
-              transition={{ duration: "0.5" }}
-              whileInView={{ opacity: 1, x: 1 }}
-            >
-              <Text color={"#FDCB00"} onClick={() => handleSession(path)}>
-                Know more
-              </Text>
-            </motion.div>
+            <Text color={"#FDCB00"} onClick={() => handleSession(path)}>
+              Know more
+            </Text>
           </Box>
-    </VStack>
-  </Box> 
+        </VStack>
+      </motion.div>
+    </Box> 
   )
 }
 

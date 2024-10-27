@@ -8,7 +8,7 @@ import DescriptionBox3 from '../../components/projects/poject_details/Descriptio
 import Gallery from '../../components/projects/poject_details/Gallery'
 
 const TheHub = () => {
-  const [data,setData] = useState(completedProjects[0])
+  const [data] = useState(completedProjects[0])
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = data.name

@@ -15,6 +15,7 @@ const FrontBanner = () => {
                     transition={{duration:"0.5"}}
                     whileInView={{ opacity: 1 ,y:1}}
                     style={{position:"absolute" }}
+                    viewport={{ once: true }}
                     
                 >
             <Heading  fontSize={{base:"40px",md:"80px",lg:'120px'}} color={'#FDCB00'}>About us</Heading>

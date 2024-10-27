@@ -9,7 +9,7 @@ import Description from '../../components/projects/poject_details/Description'
 import Gallery from '../../components/projects/poject_details/Gallery'
 
 const NexusOne = () => {
-  const [data,setData] = useState(ongoingProjects[0])
+  const [data] = useState(ongoingProjects[0])
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = data.name

@@ -11,7 +11,7 @@ import DescrptionBox1 from '../../components/projects/poject_details/DescrptionB
 import Gallery from '../../components/projects/poject_details/Gallery'
 
 const NexusHeights = () => {
-  const [data,setData] = useState(ongoingProjects[1])
+  const [data] = useState(ongoingProjects[1])
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = data.name

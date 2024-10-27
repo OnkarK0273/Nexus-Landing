@@ -8,7 +8,7 @@ import DescriptionBox4 from '../../components/projects/poject_details/Descriptio
 import Gallery from '../../components/projects/poject_details/Gallery'
 
 const DrDongare = () => {
-  const [data,setData] = useState(ongoingProjects[2])
+  const [data] = useState(ongoingProjects[2])
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = data.name
